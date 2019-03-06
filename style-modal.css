@@ -1,15 +1,27 @@
 .awefont{
     display: inline;
     text-decoration: none;
+    margin-left: 10px;
 }
-.icones{
+.bloc-icones{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content:space-around;
-    font-size: 0.8em;
-    color:rgb(105, 105, 105e)
+    justify-content:space-evenly;
+    font-size: 0.9em;
+    color:rgb(105, 105, 105);
+    margin-left:-40px;
+    padding-top:20px;
+}
+h5{
+    text-align: center;
 }
 span{
     color:red;
+}
+.modal-body{
+    text-align: justify;
+}
+.bloc-text{
+    margin-left:-20px;
 }
