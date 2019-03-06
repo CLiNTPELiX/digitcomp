@@ -9,6 +9,7 @@
 .margehaute{
 	margin-top: 15px;
 }
+<<<<<<< HEAD
 
 .
 =======
@@ -25,4 +26,14 @@
 .vert-cent{
 	display: flex;
 	align-items: center;
+=======
+#twitter{
+	color: lightblue;
+>>>>>>> feature/footer
+}
+#facebook{
+	color: blue;
+}
+#linkedin{
+	color: teal;
 }
