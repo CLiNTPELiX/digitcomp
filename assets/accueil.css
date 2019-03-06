@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #body-fond{
 	background-color: grey;
 	background-image: url('https://image.noelshack.com/fichiers/2019/10/3/1551886350-geometric-3037028-1920-1.jpg');
@@ -10,6 +11,17 @@
 }
 
 .
+=======
+.margehaute{
+	margin-top: 15px;
+}
+/*.row{
+	display: flex;
+	justify-content: center;
+} */
+
+
+>>>>>>> feature/navbar
 .vert-cent{
 	display: flex;
 	align-items: center;
