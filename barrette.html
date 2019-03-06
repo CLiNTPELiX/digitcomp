@@ -1,0 +1,2284 @@
+<html lang="en">
+
+<head>
+    <style type="text/css">
+        .gm-style .gm-style-mtc label,
+        .gm-style .gm-style-mtc div {
+            font-weight: 400
+        }
+    </style>
+    <style type="text/css">
+        .gm-control-active>img {
+            box-sizing: content-box;
+            display: none;
+            left: 50%;
+            pointer-events: none;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%)
+        }
+
+        .gm-control-active>img:nth-child(1) {
+            display: block
+        }
+
+        .gm-control-active:hover>img:nth-child(1),
+        .gm-control-active:active>img:nth-child(1) {
+            display: none
+        }
+
+        .gm-control-active:hover>img:nth-child(2),
+        .gm-control-active:active>img:nth-child(3) {
+            display: block
+        }
+    </style>
+    <link type="text/css" rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans">
+    <style type="text/css">
+        .gm-ui-hover-effect {
+            opacity: .6
+        }
+
+        .gm-ui-hover-effect:hover {
+            opacity: 1
+        }
+    </style>
+    <style type="text/css">
+        .gm-style .gm-style-cc span,
+        .gm-style .gm-style-cc a,
+        .gm-style .gm-style-mtc div {
+            font-size: 10px;
+            box-sizing: border-box
+        }
+    </style>
+    <style type="text/css">
+        @media print {
+
+            .gm-style .gmnoprint,
+            .gmnoprint {
+                display: none
+            }
+        }
+
+        @media screen {
+
+            .gm-style .gmnoscreen,
+            .gmnoscreen {
+                display: none
+            }
+        }
+    </style>
+    <style type="text/css">
+        .gm-style-pbc {
+            transition: opacity ease-in-out;
+            background-color: rgba(0, 0, 0, 0.45);
+            text-align: center
+        }
+
+        .gm-style-pbt {
+            font-size: 22px;
+            color: white;
+            font-family: Roboto, Arial, sans-serif;
+            position: relative;
+            margin: 0;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%)
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+    <meta name="author" content="Łukasz Holeczek">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+    <title>CoreUI Pro Bootstrap Admin Template</title>
+
+    <link href="https://coreui.io/demo/vendors/@coreui/icons/css/coreui-icons.min.css" rel="stylesheet">
+    <link href="https://coreui.io/demo/vendors/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+    <link href="https://coreui.io/demo/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://coreui.io/demo/vendors/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <link href="https://coreui.io/demo/css/style.css" rel="stylesheet">
+    <link href="https://coreui.io/demo/vendors/pace-progress/css/pace.min.css" rel="stylesheet">
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-118965717-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script type="text/javascript" charset="UTF-8"
+        src="https://maps.googleapis.com/maps-api-v3/api/js/36/4/intl/fr_ALL/common.js"></script>
+    <script type="text/javascript" charset="UTF-8"
+        src="https://maps.googleapis.com/maps-api-v3/api/js/36/4/intl/fr_ALL/util.js"></script>
+    <script type="text/javascript" charset="UTF-8"
+        src="https://maps.googleapis.com/maps-api-v3/api/js/36/4/intl/fr_ALL/map.js"></script>
+    <script type="text/javascript" charset="UTF-8"
+        src="https://maps.googleapis.com/maps-api-v3/api/js/36/4/intl/fr_ALL/marker.js"></script>
+    <style type="text/css">
+        .gm-style {
+            font: 400 11px Roboto, Arial, sans-serif;
+            text-decoration: none;
+        }
+
+        .gm-style img {
+            max-width: none;
+        }
+    </style>
+    <script type="text/javascript" charset="UTF-8"
+        src="https://maps.googleapis.com/maps-api-v3/api/js/36/4/intl/fr_ALL/onion.js"></script>
+    <script type="text/javascript" charset="UTF-8"
+        src="https://maps.googleapis.com/maps-api-v3/api/js/36/4/intl/fr_ALL/infowindow.js"></script>
+    <script type="text/javascript" charset="UTF-8"
+        src="https://maps.googleapis.com/maps-api-v3/api/js/36/4/intl/fr_ALL/controls.js"></script>
+    <style type="text/css">
+        /* Chart.js */
+        @-webkit-keyframes chartjs-render-animation {
+            from {
+                opacity: 0.99
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes chartjs-render-animation {
+            from {
+                opacity: 0.99
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        .chartjs-render-monitor {
+            -webkit-animation: chartjs-render-animation 0.001s;
+            animation: chartjs-render-animation 0.001s;
+        }
+    </style>
+    <style type="text/css">
+        /* Chart.js */
+        @-webkit-keyframes chartjs-render-animation {
+            from {
+                opacity: 0.99
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes chartjs-render-animation {
+            from {
+                opacity: 0.99
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        .chartjs-render-monitor {
+            -webkit-animation: chartjs-render-animation 0.001s;
+            animation: chartjs-render-animation 0.001s;
+        }
+    </style>
+    <style type="text/css">
+        /* Chart.js */
+        @-webkit-keyframes chartjs-render-animation {
+            from {
+                opacity: 0.99
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes chartjs-render-animation {
+            from {
+                opacity: 0.99
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        .chartjs-render-monitor {
+            -webkit-animation: chartjs-render-animation 0.001s;
+            animation: chartjs-render-animation 0.001s;
+        }
+    </style>
+</head>
+
+<body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show   pace-done">
+    <div class="pace  pace-inactive">
+        <div class="pace-progress" data-progress-text="100%" data-progress="99"
+            style="transform: translate3d(100%, 0px, 0px);">
+            <div class="pace-progress-inner"></div>
+        </div>
+        <div class="pace-activity"></div>
+    </div>
+    <header class="app-header navbar">
+        <button class="navbar-toggler sidebar-toggler d-lg-none mr-auto" type="button" data-toggle="sidebar-show">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+            <img class="navbar-brand-full" src="https://coreui.io/demo/img/brand/logo.svg" width="89" height="25" alt="CoreUI Logo">
+            <img class="navbar-brand-minimized" src="img/brand/sygnet.svg" width="30" height="30" alt="CoreUI Logo">
+        </a>
+        <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" data-toggle="sidebar-lg-show">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="nav navbar-nav d-md-down-none">
+            <li class="nav-item px-3">
+                <a class="nav-link" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item px-3">
+                <a class="nav-link" href="#">Users</a>
+            </li>
+            <li class="nav-item px-3">
+                <a class="nav-link" href="#">Settings</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item dropdown d-md-down-none">
+                <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                    aria-expanded="false">
+                    <i class="icon-bell"></i>
+                    <span class="badge badge-pill badge-danger">5</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg">
+                    <div class="dropdown-header text-center">
+                        <strong>You have 5 notifications</strong>
+                    </div>
+                    <a class="dropdown-item" href="#">
+                        <i class="icon-user-follow text-success"></i> New user registered</a>
+                    <a class="dropdown-item" href="#">
+                        <i class="icon-user-unfollow text-danger"></i> User deleted</a>
+                    <a class="dropdown-item" href="#">
+                        <i class="icon-chart text-info"></i> Sales report is ready</a>
+                    <a class="dropdown-item" href="#">
+                        <i class="icon-basket-loaded text-primary"></i> New client</a>
+                    <a class="dropdown-item" href="#">
+                        <i class="icon-speedometer text-warning"></i> Server overloaded</a>
+                    <div class="dropdown-header text-center">
+                        <strong>Server</strong>
+                    </div>
+                    <a class="dropdown-item" href="#">
+                        <div class="text-uppercase mb-1">
+                            <small>
+                                <b>CPU Usage</b>
+                            </small>
+                        </div>
+                        <span class="progress progress-xs">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </span>
+                        <small class="text-muted">348 Processes. 1/4 Cores.</small>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <div class="text-uppercase mb-1">
+                            <small>
+                                <b>Memory Usage</b>
+                            </small>
+                        </div>
+                        <span class="progress progress-xs">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 70%"
+                                aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </span>
+                        <small class="text-muted">11444GB/16384MB</small>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <div class="text-uppercase mb-1">
+                            <small>
+                                <b>SSD 1 Usage</b>
+                            </small>
+                        </div>
+                        <span class="progress progress-xs">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="95"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </span>
+                        <small class="text-muted">243GB/256GB</small>
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item dropdown d-md-down-none">
+                <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                    aria-expanded="false">
+                    <i class="icon-list"></i>
+                    <span class="badge badge-pill badge-warning">15</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg">
+                    <div class="dropdown-header text-center">
+                        <strong>You have 5 pending tasks</strong>
+                    </div>
+                    <a class="dropdown-item" href="#">
+                        <div class="small mb-1">Upgrade NPM &amp; Bower
+                            <span class="float-right">
+                                <strong>0%</strong>
+                            </span>
+                        </div>
+                        <span class="progress progress-xs">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 0%" aria-valuenow="0"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <div class="small mb-1">ReactJS Version
+                            <span class="float-right">
+                                <strong>25%</strong>
+                            </span>
+                        </div>
+                        <span class="progress progress-xs">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <div class="small mb-1">VueJS Version
+                            <span class="float-right">
+                                <strong>50%</strong>
+                            </span>
+                        </div>
+                        <span class="progress progress-xs">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 50%"
+                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <div class="small mb-1">Add new layouts
+                            <span class="float-right">
+                                <strong>75%</strong>
+                            </span>
+                        </div>
+                        <span class="progress progress-xs">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="75"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <div class="small mb-1">Angular 2 Cli Version
+                            <span class="float-right">
+                                <strong>100%</strong>
+                            </span>
+                        </div>
+                        <span class="progress progress-xs">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </span>
+                    </a>
+                    <a class="dropdown-item text-center" href="#">
+                        <strong>View all tasks</strong>
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item dropdown d-md-down-none">
+                <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                    aria-expanded="false">
+                    <i class="icon-envelope-letter"></i>
+                    <span class="badge badge-pill badge-info">7</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg">
+                    <div class="dropdown-header text-center">
+                        <strong>You have 4 messages</strong>
+                    </div>
+                    <a class="dropdown-item" href="#">
+                        <div class="message">
+                            <div class="py-3 mr-3 float-left">
+                                <div class="avatar">
+                                    <img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com">
+                                    <span class="avatar-status badge-success"></span>
+                                </div>
+                            </div>
+                            <div>
+                                <small class="text-muted">John Doe</small>
+                                <small class="text-muted float-right mt-1">Just now</small>
+                            </div>
+                            <div class="text-truncate font-weight-bold">
+                                <span class="fa fa-exclamation text-danger"></span> Important message</div>
+                            <div class="small text-muted text-truncate">Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit, sed do eiusmod tempor incididunt...</div>
+                        </div>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <div class="message">
+                            <div class="py-3 mr-3 float-left">
+                                <div class="avatar">
+                                    <img class="img-avatar" src="img/avatars/6.jpg" alt="admin@bootstrapmaster.com">
+                                    <span class="avatar-status badge-warning"></span>
+                                </div>
+                            </div>
+                            <div>
+                                <small class="text-muted">John Doe</small>
+                                <small class="text-muted float-right mt-1">5 minutes ago</small>
+                            </div>
+                            <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+                            <div class="small text-muted text-truncate">Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit, sed do eiusmod tempor incididunt...</div>
+                        </div>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <div class="message">
+                            <div class="py-3 mr-3 float-left">
+                                <div class="avatar">
+                                    <img class="img-avatar" src="img/avatars/5.jpg" alt="admin@bootstrapmaster.com">
+                                    <span class="avatar-status badge-danger"></span>
+                                </div>
+                            </div>
+                            <div>
+                                <small class="text-muted">John Doe</small>
+                                <small class="text-muted float-right mt-1">1:52 PM</small>
+                            </div>
+                            <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+                            <div class="small text-muted text-truncate">Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit, sed do eiusmod tempor incididunt...</div>
+                        </div>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <div class="message">
+                            <div class="py-3 mr-3 float-left">
+                                <div class="avatar">
+                                    <img class="img-avatar" src="img/avatars/4.jpg" alt="admin@bootstrapmaster.com">
+                                    <span class="avatar-status badge-info"></span>
+                                </div>
+                            </div>
+                            <div>
+                                <small class="text-muted">John Doe</small>
+                                <small class="text-muted float-right mt-1">4:03 PM</small>
+                            </div>
+                            <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+                            <div class="small text-muted text-truncate">Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit, sed do eiusmod tempor incididunt...</div>
+                        </div>
+                    </a>
+                    <a class="dropdown-item text-center" href="#">
+                        <strong>View all messages</strong>
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                    aria-expanded="false">
+                    <img class="img-avatar" src="img/avatars/6.jpg" alt="admin@bootstrapmaster.com">
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <div class="dropdown-header text-center">
+                        <strong>Account</strong>
+                    </div>
+                    <a class="dropdown-item" href="#">
+                        <i class="fa fa-bell-o"></i> Updates
+                        <span class="badge badge-info">42</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <i class="fa fa-envelope-o"></i> Messages
+                        <span class="badge badge-success">42</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <i class="fa fa-tasks"></i> Tasks
+                        <span class="badge badge-danger">42</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <i class="fa fa-comments"></i> Comments
+                        <span class="badge badge-warning">42</span>
+                    </a>
+                    <div class="dropdown-header text-center">
+                        <strong>Settings</strong>
+                    </div>
+                    <a class="dropdown-item" href="#">
+                        <i class="fa fa-user"></i> Profile</a>
+                    <a class="dropdown-item" href="#">
+                        <i class="fa fa-wrench"></i> Settings</a>
+                    <a class="dropdown-item" href="#">
+                        <i class="fa fa-usd"></i> Payments
+                        <span class="badge badge-dark">42</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <i class="fa fa-file"></i> Projects
+                        <span class="badge badge-primary">42</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                        <i class="fa fa-shield"></i> Lock Account</a>
+                    <a class="dropdown-item" href="#">
+                        <i class="fa fa-lock"></i> Logout</a>
+                </div>
+            </li>
+        </ul>
+        <button class="navbar-toggler aside-menu-toggler d-md-down-none" type="button" data-toggle="aside-menu-lg-show">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <button class="navbar-toggler aside-menu-toggler d-lg-none" type="button" data-toggle="aside-menu-show">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </header>
+    <div class="app-body">
+        <div class="sidebar">
+            <nav class="sidebar-nav ps ps--active-y">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="main.html">
+                            <i class="nav-icon icon-speedometer"></i> Dashboard
+                            <span class="badge badge-info">NEW</span>
+                        </a>
+                    </li>
+                    <li class="nav-title">Theme</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="colors.html">
+                            <i class="nav-icon icon-drop"></i> Colors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="typography.html">
+                            <i class="nav-icon icon-pencil"></i> Typography</a>
+                    </li>
+                    <li class="nav-title">Components</li>
+                    <li class="nav-item nav-dropdown">
+                        <a class="nav-link nav-dropdown-toggle" href="#">
+                            <i class="nav-icon icon-puzzle"></i> Base</a>
+                        <ul class="nav-dropdown-items">
+                            <li class="nav-item">
+                                <a class="nav-link" href="base/breadcrumb.html">
+                                    <i class="nav-icon icon-puzzle"></i> Breadcrumb</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="base/cards.html">
+                                    <i class="nav-icon icon-puzzle"></i> Cards</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="base/carousel.html">
+                                    <i class="nav-icon icon-puzzle"></i> Carousel</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="base/collapse.html">
+                                    <i class="nav-icon icon-puzzle"></i> Collapse</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="base/jumbotron.html">
+                                    <i class="nav-icon icon-puzzle"></i> Jumbotron</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="base/list-group.html">
+                                    <i class="nav-icon icon-puzzle"></i> List group</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="base/navs.html">
+                                    <i class="nav-icon icon-puzzle"></i> Navs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="base/pagination.html">
+                                    <i class="nav-icon icon-puzzle"></i> Pagination</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="base/popovers.html">
+                                    <i class="nav-icon icon-puzzle"></i> Popovers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="base/progress.html">
+                                    <i class="nav-icon icon-puzzle"></i> Progress</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="base/scrollspy.html">
+                                    <i class="nav-icon icon-puzzle"></i> Scrollspy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="base/switches.html">
+                                    <i class="nav-icon icon-puzzle"></i> Switches</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="base/tabs.html">
+                                    <i class="nav-icon icon-puzzle"></i> Tabs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="base/tooltips.html">
+                                    <i class="nav-icon icon-puzzle"></i> Tooltips</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-dropdown">
+                        <a class="nav-link nav-dropdown-toggle" href="#">
+                            <i class="nav-icon icon-cursor"></i> Buttons</a>
+                        <ul class="nav-dropdown-items">
+                            <li class="nav-item">
+                                <a class="nav-link" href="buttons/buttons.html">
+                                    <i class="nav-icon icon-cursor"></i> Buttons</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="buttons/brand-buttons.html">
+                                    <i class="nav-icon icon-cursor"></i> Brand Buttons</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="buttons/button-group.html">
+                                    <i class="nav-icon icon-cursor"></i> Buttons Group</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="buttons/dropdowns.html">
+                                    <i class="nav-icon icon-cursor"></i> Dropdowns</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="buttons/loading-buttons.html">
+                                    <i class="nav-icon icon-cursor"></i> Loading Buttons
+                                    <span class="badge badge-danger">PRO</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="charts.html">
+                            <i class="nav-icon icon-pie-chart"></i> Charts</a>
+                    </li>
+                    <li class="nav-item nav-dropdown">
+                        <a class="nav-link nav-dropdown-toggle" href="#">
+                            <i class="nav-icon fa fa-code"></i> Editors</a>
+                        <ul class="nav-dropdown-items">
+                            <li class="nav-item">
+                                <a class="nav-link" href="editors/code-editor.html">
+                                    <i class="nav-icon icon-note"></i> Code Editor
+                                    <span class="badge badge-danger">PRO</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="editors/markdown-editor.html">
+                                    <i class="nav-icon fa fa-code"></i> Markdown
+                                    <span class="badge badge-danger">PRO</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="editors/text-editor.html">
+                                    <i class="nav-icon icon-note"></i> Rich Text Editor
+                                    <span class="badge badge-danger">PRO</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-dropdown">
+                        <a class="nav-link nav-dropdown-toggle" href="#">
+                            <i class="nav-icon icon-note"></i> Forms</a>
+                        <ul class="nav-dropdown-items">
+                            <li class="nav-item">
+                                <a class="nav-link" href="forms/basic-forms.html">
+                                    <i class="nav-icon icon-note"></i> Basic Forms</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="forms/advanced-forms.html">
+                                    <i class="nav-icon icon-note"></i> Advanced
+                                    <span class="badge badge-danger">PRO</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="forms/validation.html">
+                                    <i class="nav-icon icon-note"></i> Validation
+                                    <span class="badge badge-danger">PRO</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="google-maps.html">
+                            <i class="nav-icon icon-map"></i> Google Maps
+                            <span class="badge badge-danger">PRO</span>
+                        </a>
+                    </li>
+                    <li class="nav-item nav-dropdown">
+                        <a class="nav-link nav-dropdown-toggle" href="#">
+                            <i class="nav-icon icon-star"></i> Icons</a>
+                        <ul class="nav-dropdown-items">
+                            <li class="nav-item">
+                                <a class="nav-link" href="icons/coreui-icons.html">
+                                    <i class="nav-icon icon-star"></i> CoreUI Icons
+                                    <span class="badge badge-success">NEW</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="icons/flags.html">
+                                    <i class="nav-icon icon-star"></i> Flags</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="icons/font-awesome.html">
+                                    <i class="nav-icon icon-star"></i> Font Awesome
+                                    <span class="badge badge-secondary">4.7</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="icons/simple-line-icons.html">
+                                    <i class="nav-icon icon-star"></i> Simple Line Icons</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-dropdown">
+                        <a class="nav-link nav-dropdown-toggle" href="#">
+                            <i class="nav-icon icon-bell"></i> Notifications</a>
+                        <ul class="nav-dropdown-items">
+                            <li class="nav-item">
+                                <a class="nav-link" href="notifications/alerts.html">
+                                    <i class="nav-icon icon-bell"></i> Alerts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="notifications/badge.html">
+                                    <i class="nav-icon icon-bell"></i> Badge</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="notifications/modals.html">
+                                    <i class="nav-icon icon-bell"></i> Modals</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="notifications/toastr.html">
+                                    <i class="nav-icon icon-bell"></i> Toastr
+                                    <span class="badge badge-danger">PRO</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-dropdown open">
+                        <a class="nav-link nav-dropdown-toggle" href="#">
+                            <i class="nav-icon icon-energy"></i> Plugins</a>
+                        <ul class="nav-dropdown-items">
+                            <li class="nav-item">
+                                <a class="nav-link" href="plugins/calendar.html">
+                                    <i class="nav-icon icon-calendar"></i> Calendar
+                                    <span class="badge badge-danger">PRO</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="plugins/draggable-cards.html">
+                                    <i class="nav-icon icon-cursor-move"></i> Draggable
+                                    <span class="badge badge-danger">PRO</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="plugins/sliders.html">
+                                    <i class="nav-icon icon-equalizer"></i> Sliders
+                                    <span class="badge badge-danger">PRO</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="plugins/spinners.html">
+                                    <i class="nav-icon fa fa-spinner"></i> Spinners
+                                    <span class="badge badge-danger">PRO</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-dropdown">
+                        <a class="nav-link nav-dropdown-toggle" href="#">
+                            <i class="nav-icon icon-list"></i> Tables</a>
+                        <ul class="nav-dropdown-items">
+                            <li class="nav-item">
+                                <a class="nav-link" href="tables/tables.html">
+                                    <i class="nav-icon icon-list"></i> Standard Tables</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tables/datatables.html">
+                                    <i class="nav-icon icon-list"></i> DataTables
+                                    <span class="badge badge-danger">PRO</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="widgets.html">
+                            <i class="nav-icon icon-calculator"></i> Widgets
+                            <span class="badge badge-info">NEW</span>
+                        </a>
+                    </li>
+                    <li class="nav-divider"></li>
+                    <li class="nav-title">Extras</li>
+                    <li class="nav-item nav-dropdown">
+                        <a class="nav-link nav-dropdown-toggle" href="#">
+                            <i class="nav-icon icon-star"></i> Pages</a>
+                        <ul class="nav-dropdown-items">
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html" target="_top">
+                                    <i class="nav-icon icon-star"></i> Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="register.html" target="_top">
+                                    <i class="nav-icon icon-star"></i> Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="404.html" target="_top">
+                                    <i class="nav-icon icon-star"></i> Error 404</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="500.html" target="_top">
+                                    <i class="nav-icon icon-star"></i> Error 500</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-dropdown">
+                        <a class="nav-link nav-dropdown-toggle" href="#">
+                            <i class="nav-icon icon-layers"></i> Apps</a>
+                        <ul class="nav-dropdown-items">
+                            <li class="nav-item nav-dropdown">
+                                <a class="nav-link nav-dropdown-toggle" href="#">
+                                    <i class="nav-icon icon-speech"></i> Invoicing</a>
+                                <ul class="nav-dropdown-items">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="apps/invoicing/invoice.html">
+                                            <i class="nav-icon icon-speech"></i> Invoice
+                                            <span class="badge badge-danger">PRO</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item nav-dropdown">
+                                <a class="nav-link nav-dropdown-toggle" href="#">
+                                    <i class="nav-icon icon-speech"></i> Email</a>
+                                <ul class="nav-dropdown-items">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="apps/email/inbox.html">
+                                            <i class="nav-icon icon-speech"></i> Inbox
+                                            <span class="badge badge-danger">PRO</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="apps/email/message.html">
+                                            <i class="nav-icon icon-speech"></i> Message
+                                            <span class="badge badge-danger">PRO</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="apps/email/compose.html">
+                                            <i class="nav-icon icon-speech"></i> Compose
+                                            <span class="badge badge-danger">PRO</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-divider"></li>
+                    <li class="nav-title">Labels</li>
+                    <li class="nav-item d-compact-none d-minimized-none">
+                        <a class="nav-label" href="#">
+                            <i class="fa fa-circle text-danger"></i> Label danger</a>
+                    </li>
+                    <li class="nav-item d-compact-none d-minimized-none">
+                        <a class="nav-label" href="#">
+                            <i class="fa fa-circle text-info"></i> Label info</a>
+                    </li>
+                    <li class="nav-item d-compact-none d-minimized-none">
+                        <a class="nav-label" href="#">
+                            <i class="fa fa-circle text-warning"></i> Label warning</a>
+                    </li>
+                    <li class="nav-divider"></li>
+                    <li class="nav-title">System Utilization</li>
+                    <li class="nav-item px-3 d-compact-none d-minimized-none">
+                        <div class="text-uppercase mb-1">
+                            <small>
+                                <b>CPU Usage</b>
+                            </small>
+                        </div>
+                        <div class="progress progress-xs">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small class="text-muted">348 Processes. 1/4 Cores.</small>
+                    </li>
+                    <li class="nav-item px-3 d-compact-none d-minimized-none">
+                        <div class="text-uppercase mb-1">
+                            <small>
+                                <b>Memory Usage</b>
+                            </small>
+                        </div>
+                        <div class="progress progress-xs">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 70%"
+                                aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small class="text-muted">11444GB/16384MB</small>
+                    </li>
+                    <li class="nav-item px-3 mb-3 d-compact-none d-minimized-none">
+                        <div class="text-uppercase mb-1">
+                            <small>
+                                <b>SSD 1 Usage</b>
+                            </small>
+                        </div>
+                        <div class="progress progress-xs">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="95"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <small class="text-muted">243GB/256GB</small>
+                    </li>
+                </ul>
+                <div class="ps__rail-x" style="left: 0px; bottom: -318px;">
+                    <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps__rail-y" style="top: 318px; height: 577px; right: 0px;">
+                    <div class="ps__thumb-y" tabindex="0" style="top: 134px; height: 243px;"></div>
+                </div>
+            </nav>
+            <button class="sidebar-minimizer brand-minimizer" type="button"></button>
+        </div>
+        <main class="main">
+
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">Home</li>
+                <li class="breadcrumb-item">
+                    <a href="#">Admin</a>
+                </li>
+                <li class="breadcrumb-item active">Dashboard</li>
+
+                <li class="breadcrumb-menu d-md-down-none">
+                    <div class="btn-group" role="group" aria-label="Button group">
+                        <a class="btn" href="#">
+                            <i class="icon-speech"></i>
+                        </a>
+                        <a class="btn" href="./">
+                            <i class="icon-graph"></i> &nbsp;Dashboard</a>
+                        <a class="btn" href="#">
+                            <i class="icon-settings"></i> &nbsp;Settings</a>
+                    </div>
+                </li>
+            </ol>
+            <div class="container-fluid">
+                <div id="ui-view">
+                    <div>
+                        <link href="vendors/ion-rangeslider/css/ion.rangeSlider.min.css" rel="stylesheet">
+
+
+
+                        <div class="animated fadeIn">
+                            <div class="card">
+                                <div class="card-header">Ion.RangeSlider
+                                    <a class="badge badge-danger" href="https://coreui.io/pro/">CoreUI Pro Component</a>
+                                    <div class="card-header-actions">
+                                        <a class="card-header-action"
+                                            href="http://ionden.com/a/plugins/ion.rangeSlider/demo.html"
+                                            target="_blank">
+                                            <small class="text-muted">docs</small>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h6>Start without params</h6>
+                                    <span class="irs js-irs-0"><span class="irs"><span class="irs-line"
+                                                tabindex="0"><span class="irs-line-left"></span><span
+                                                    class="irs-line-mid"></span><span
+                                                    class="irs-line-right"></span></span><span class="irs-min"
+                                                style="visibility: hidden;">10</span><span class="irs-max"
+                                                style="visibility: visible;">100</span><span class="irs-from"
+                                                style="visibility: hidden;">0</span><span class="irs-to"
+                                                style="visibility: hidden;">0</span><span class="irs-single"
+                                                style="left: -0.672431%;">10</span></span><span
+                                            class="irs-grid"></span><span class="irs-bar"
+                                            style="left: 0.722733%; width: 0%;"></span><span
+                                            class="irs-bar-edge"></span><span class="irs-shadow shadow-single"
+                                            style="display: none;"></span><span class="irs-slider single"
+                                            style="left: 0%;"></span></span><input id="range_01" type="text"
+                                        name="example_name" value="" class="irs-hidden-input" tabindex="-1" readonly="">
+                                    <hr>
+                                    <h6>Set min value, max value and start point</h6>
+                                    <span class="irs js-irs-1"><span class="irs"><span class="irs-line"
+                                                tabindex="0"><span class="irs-line-left"></span><span
+                                                    class="irs-line-mid"></span><span
+                                                    class="irs-line-right"></span></span><span class="irs-min"
+                                                style="visibility: visible;">100</span><span class="irs-max"
+                                                style="visibility: visible;">1 000</span><span class="irs-from"
+                                                style="visibility: hidden;">0</span><span class="irs-to"
+                                                style="visibility: hidden;">0</span><span class="irs-single"
+                                                style="left: 32.6855%;">408</span></span><span
+                                            class="irs-grid"></span><span class="irs-bar"
+                                            style="left: 0.722733%; width: 33.7276%;"></span><span
+                                            class="irs-bar-edge"></span><span class="irs-shadow shadow-single"
+                                            style="display: none;"></span><span class="irs-slider single"
+                                            style="left: 33.7276%;"></span></span><input id="range_02" type="text"
+                                        name="example_name" value="" class="irs-hidden-input" tabindex="-1" readonly="">
+                                    <hr>
+                                    <h6>Set type to double and specify range, also showing grid and adding prefix "$"
+                                    </h6>
+                                    <span class="irs js-irs-2 irs-with-grid"><span class="irs"><span class="irs-line"
+                                                tabindex="0"><span class="irs-line-left"></span><span
+                                                    class="irs-line-mid"></span><span
+                                                    class="irs-line-right"></span></span><span class="irs-min"
+                                                style="visibility: visible;">$0</span><span class="irs-max"
+                                                style="visibility: visible;">$1 000</span><span class="irs-from"
+                                                style="visibility: visible; left: 11.8943%;">$135</span><span
+                                                class="irs-to"
+                                                style="visibility: visible; left: 77.4331%;">$800</span><span
+                                                class="irs-single" style="visibility: hidden; left: 42.3497%;">$135 —
+                                                $800</span></span><span class="irs-grid"
+                                            style="width: 98.5545%; left: 0.622733%;"><span class="irs-grid-pol"
+                                                style="left: 0%"></span><span class="irs-grid-text js-grid-text-0"
+                                                style="left: 0%; margin-left: -0.72684%;">0</span><span
+                                                class="irs-grid-pol small" style="left: 20%"></span><span
+                                                class="irs-grid-pol small" style="left: 15%"></span><span
+                                                class="irs-grid-pol small" style="left: 10%"></span><span
+                                                class="irs-grid-pol small" style="left: 5%"></span><span
+                                                class="irs-grid-pol" style="left: 25%"></span><span
+                                                class="irs-grid-text js-grid-text-1"
+                                                style="left: 25%; visibility: visible; margin-left: -1.39106%;">250</span><span
+                                                class="irs-grid-pol small" style="left: 45%"></span><span
+                                                class="irs-grid-pol small" style="left: 40%"></span><span
+                                                class="irs-grid-pol small" style="left: 35%"></span><span
+                                                class="irs-grid-pol small" style="left: 30%"></span><span
+                                                class="irs-grid-pol" style="left: 50%"></span><span
+                                                class="irs-grid-text js-grid-text-2"
+                                                style="left: 50%; visibility: visible; margin-left: -1.39106%;">500</span><span
+                                                class="irs-grid-pol small" style="left: 70%"></span><span
+                                                class="irs-grid-pol small" style="left: 65%"></span><span
+                                                class="irs-grid-pol small" style="left: 60%"></span><span
+                                                class="irs-grid-pol small" style="left: 55%"></span><span
+                                                class="irs-grid-pol" style="left: 75%"></span><span
+                                                class="irs-grid-text js-grid-text-3"
+                                                style="left: 75%; visibility: visible; margin-left: -1.39106%;">750</span><span
+                                                class="irs-grid-pol small" style="left: 95%"></span><span
+                                                class="irs-grid-pol small" style="left: 90%"></span><span
+                                                class="irs-grid-pol small" style="left: 85%"></span><span
+                                                class="irs-grid-pol small" style="left: 80%"></span><span
+                                                class="irs-grid-pol" style="left: 100%"></span><span
+                                                class="irs-grid-text js-grid-text-4"
+                                                style="left: 100%; margin-left: -1.86945%;">1 000</span></span><span
+                                            class="irs-bar" style="left: 14.0276%; width: 65.5388%;"></span><span
+                                            class="irs-shadow shadow-from" style="display: none;"></span><span
+                                            class="irs-shadow shadow-to" style="display: none;"></span><span
+                                            class="irs-slider from type_last" style="left: 13.3049%;"></span><span
+                                            class="irs-slider to" style="left: 78.8436%;"></span></span><input
+                                        id="range_03" type="text" name="example_name" value="" class="irs-hidden-input"
+                                        tabindex="-1" readonly="">
+                                    <hr>
+                                    <h6>Set up range with negative values</h6>
+                                    <span class="irs js-irs-3 irs-with-grid"><span class="irs"><span class="irs-line"
+                                                tabindex="0"><span class="irs-line-left"></span><span
+                                                    class="irs-line-mid"></span><span
+                                                    class="irs-line-right"></span></span><span class="irs-min"
+                                                style="visibility: visible;">-1 000</span><span class="irs-max"
+                                                style="visibility: visible;">1 000</span><span class="irs-from"
+                                                style="visibility: visible; left: 23.4159%;">-500</span><span
+                                                class="irs-to"
+                                                style="visibility: visible; left: 72.8739%;">500</span><span
+                                                class="irs-single" style="visibility: hidden; left: 46.0188%;">-500 —
+                                                500</span></span><span class="irs-grid"
+                                            style="width: 98.5545%; left: 0.622733%;"><span class="irs-grid-pol"
+                                                style="left: 0%"></span><span class="irs-grid-text js-grid-text-0"
+                                                style="left: 0%; margin-left: -2.03269%;">-1 000</span><span
+                                                class="irs-grid-pol small" style="left: 20%"></span><span
+                                                class="irs-grid-pol small" style="left: 15%"></span><span
+                                                class="irs-grid-pol small" style="left: 10%"></span><span
+                                                class="irs-grid-pol small" style="left: 5%"></span><span
+                                                class="irs-grid-pol" style="left: 25%"></span><span
+                                                class="irs-grid-text js-grid-text-1"
+                                                style="left: 25%; visibility: visible; margin-left: -1.55428%;">-500</span><span
+                                                class="irs-grid-pol small" style="left: 45%"></span><span
+                                                class="irs-grid-pol small" style="left: 40%"></span><span
+                                                class="irs-grid-pol small" style="left: 35%"></span><span
+                                                class="irs-grid-pol small" style="left: 30%"></span><span
+                                                class="irs-grid-pol" style="left: 50%"></span><span
+                                                class="irs-grid-text js-grid-text-2"
+                                                style="left: 50%; visibility: visible; margin-left: -0.72684%;">0</span><span
+                                                class="irs-grid-pol small" style="left: 70%"></span><span
+                                                class="irs-grid-pol small" style="left: 65%"></span><span
+                                                class="irs-grid-pol small" style="left: 60%"></span><span
+                                                class="irs-grid-pol small" style="left: 55%"></span><span
+                                                class="irs-grid-pol" style="left: 75%"></span><span
+                                                class="irs-grid-text js-grid-text-3"
+                                                style="left: 75%; visibility: visible; margin-left: -1.39106%;">500</span><span
+                                                class="irs-grid-pol small" style="left: 95%"></span><span
+                                                class="irs-grid-pol small" style="left: 90%"></span><span
+                                                class="irs-grid-pol small" style="left: 85%"></span><span
+                                                class="irs-grid-pol small" style="left: 80%"></span><span
+                                                class="irs-grid-pol" style="left: 100%"></span><span
+                                                class="irs-grid-text js-grid-text-4"
+                                                style="left: 100%; margin-left: -1.86945%;">1 000</span></span><span
+                                            class="irs-bar" style="left: 25.3614%; width: 49.2773%;"></span><span
+                                            class="irs-shadow shadow-from" style="display: none;"></span><span
+                                            class="irs-shadow shadow-to" style="display: none;"></span><span
+                                            class="irs-slider from" style="left: 24.6386%;"></span><span
+                                            class="irs-slider to type_last" style="left: 73.9159%;"></span></span><input
+                                        id="range_04" type="text" name="example_name" value="" class="irs-hidden-input"
+                                        tabindex="-1" readonly="">
+                                    <hr>
+                                    <h6>Using step 250</h6>
+                                    <span class="irs js-irs-4 irs-with-grid"><span class="irs"><span class="irs-line"
+                                                tabindex="0"><span class="irs-line-left"></span><span
+                                                    class="irs-line-mid"></span><span
+                                                    class="irs-line-right"></span></span><span class="irs-min"
+                                                style="visibility: visible;">-1 000</span><span class="irs-max"
+                                                style="visibility: visible;">1 000</span><span class="irs-from"
+                                                style="visibility: visible; left: 23.4159%;">-500</span><span
+                                                class="irs-to"
+                                                style="visibility: visible; left: 72.8739%;">500</span><span
+                                                class="irs-single" style="visibility: hidden; left: 46.0188%;">-500 —
+                                                500</span></span><span class="irs-grid"
+                                            style="width: 98.5545%; left: 0.622733%;"><span class="irs-grid-pol"
+                                                style="left: 0%"></span><span class="irs-grid-text js-grid-text-0"
+                                                style="left: 0%; margin-left: -2.03269%;">-1 000</span><span
+                                                class="irs-grid-pol small" style="left: 20%"></span><span
+                                                class="irs-grid-pol small" style="left: 15%"></span><span
+                                                class="irs-grid-pol small" style="left: 10%"></span><span
+                                                class="irs-grid-pol small" style="left: 5%"></span><span
+                                                class="irs-grid-pol" style="left: 25%"></span><span
+                                                class="irs-grid-text js-grid-text-1"
+                                                style="left: 25%; visibility: visible; margin-left: -1.55428%;">-500</span><span
+                                                class="irs-grid-pol small" style="left: 45%"></span><span
+                                                class="irs-grid-pol small" style="left: 40%"></span><span
+                                                class="irs-grid-pol small" style="left: 35%"></span><span
+                                                class="irs-grid-pol small" style="left: 30%"></span><span
+                                                class="irs-grid-pol" style="left: 50%"></span><span
+                                                class="irs-grid-text js-grid-text-2"
+                                                style="left: 50%; visibility: visible; margin-left: -0.72684%;">0</span><span
+                                                class="irs-grid-pol small" style="left: 70%"></span><span
+                                                class="irs-grid-pol small" style="left: 65%"></span><span
+                                                class="irs-grid-pol small" style="left: 60%"></span><span
+                                                class="irs-grid-pol small" style="left: 55%"></span><span
+                                                class="irs-grid-pol" style="left: 75%"></span><span
+                                                class="irs-grid-text js-grid-text-3"
+                                                style="left: 75%; visibility: visible; margin-left: -1.39106%;">500</span><span
+                                                class="irs-grid-pol small" style="left: 95%"></span><span
+                                                class="irs-grid-pol small" style="left: 90%"></span><span
+                                                class="irs-grid-pol small" style="left: 85%"></span><span
+                                                class="irs-grid-pol small" style="left: 80%"></span><span
+                                                class="irs-grid-pol" style="left: 100%"></span><span
+                                                class="irs-grid-text js-grid-text-4"
+                                                style="left: 100%; margin-left: -1.86945%;">1 000</span></span><span
+                                            class="irs-bar" style="left: 25.3614%; width: 49.2773%;"></span><span
+                                            class="irs-shadow shadow-from" style="display: none;"></span><span
+                                            class="irs-shadow shadow-to" style="display: none;"></span><span
+                                            class="irs-slider from" style="left: 24.6386%;"></span><span
+                                            class="irs-slider to type_last" style="left: 73.9159%;"></span></span><input
+                                        id="range_05" type="text" name="example_name" value="" class="irs-hidden-input"
+                                        tabindex="-1" readonly="">
+                                    <hr>
+                                    <h6>Set up range with fractional values, using fractional step</h6>
+                                    <span class="irs js-irs-5 irs-with-grid"><span class="irs"><span class="irs-line"
+                                                tabindex="0"><span class="irs-line-left"></span><span
+                                                    class="irs-line-mid"></span><span
+                                                    class="irs-line-right"></span></span><span class="irs-min"
+                                                style="visibility: visible;">-12.8</span><span class="irs-max"
+                                                style="visibility: visible;">12.8</span><span class="irs-from"
+                                                style="visibility: visible; left: 35.9313%;">-3.2</span><span
+                                                class="irs-to"
+                                                style="visibility: visible; left: 60.7507%;">3.2</span><span
+                                                class="irs-single" style="visibility: hidden; left: 46.411%;">-3.2 —
+                                                3.2</span></span><span class="irs-grid"
+                                            style="width: 98.5545%; left: 0.622733%;"><span class="irs-grid-pol"
+                                                style="left: 0%"></span><span class="irs-grid-text js-grid-text-0"
+                                                style="left: 0%; margin-left: -1.7093%;">-12.8</span><span
+                                                class="irs-grid-pol small" style="left: 20%"></span><span
+                                                class="irs-grid-pol small" style="left: 15%"></span><span
+                                                class="irs-grid-pol small" style="left: 10%"></span><span
+                                                class="irs-grid-pol small" style="left: 5%"></span><span
+                                                class="irs-grid-pol" style="left: 25%"></span><span
+                                                class="irs-grid-text js-grid-text-1"
+                                                style="left: 25%; visibility: visible; margin-left: -1.37771%;">-6.4</span><span
+                                                class="irs-grid-pol small" style="left: 45%"></span><span
+                                                class="irs-grid-pol small" style="left: 40%"></span><span
+                                                class="irs-grid-pol small" style="left: 35%"></span><span
+                                                class="irs-grid-pol small" style="left: 30%"></span><span
+                                                class="irs-grid-pol" style="left: 50%"></span><span
+                                                class="irs-grid-text js-grid-text-2"
+                                                style="left: 50%; visibility: visible; margin-left: -0.72684%;">0</span><span
+                                                class="irs-grid-pol small" style="left: 70%"></span><span
+                                                class="irs-grid-pol small" style="left: 65%"></span><span
+                                                class="irs-grid-pol small" style="left: 60%"></span><span
+                                                class="irs-grid-pol small" style="left: 55%"></span><span
+                                                class="irs-grid-pol" style="left: 75%"></span><span
+                                                class="irs-grid-text js-grid-text-3"
+                                                style="left: 75%; visibility: visible; margin-left: -1.21448%;">6.4</span><span
+                                                class="irs-grid-pol small" style="left: 95%"></span><span
+                                                class="irs-grid-pol small" style="left: 90%"></span><span
+                                                class="irs-grid-pol small" style="left: 85%"></span><span
+                                                class="irs-grid-pol small" style="left: 80%"></span><span
+                                                class="irs-grid-pol" style="left: 100%"></span><span
+                                                class="irs-grid-text js-grid-text-4"
+                                                style="left: 100%; margin-left: -1.54607%;">12.8</span></span><span
+                                            class="irs-bar" style="left: 37.6807%; width: 24.6386%;"></span><span
+                                            class="irs-shadow shadow-from" style="display: none;"></span><span
+                                            class="irs-shadow shadow-to" style="display: none;"></span><span
+                                            class="irs-slider from" style="left: 36.958%;"></span><span
+                                            class="irs-slider to type_last" style="left: 61.5966%;"></span></span><input
+                                        id="range_06" type="text" name="example_name" value="" class="irs-hidden-input"
+                                        tabindex="-1" readonly="">
+                                    <hr>
+                                    <h6>Set up you own numbers</h6>
+                                    <span class="irs js-irs-6 irs-with-grid"><span class="irs"><span class="irs-line"
+                                                tabindex="0"><span class="irs-line-left"></span><span
+                                                    class="irs-line-mid"></span><span
+                                                    class="irs-line-right"></span></span><span class="irs-min"
+                                                style="visibility: visible;">0</span><span class="irs-max"
+                                                style="visibility: visible;">1 000 000</span><span class="irs-from"
+                                                style="visibility: visible; left: 15.7533%;">10</span><span
+                                                class="irs-to" style="visibility: visible; left: 79.8179%;">100
+                                                000</span><span class="irs-single"
+                                                style="visibility: hidden; left: 46.2098%;">10 — 100
+                                                000</span></span><span class="irs-grid"
+                                            style="width: 98.5545%; left: 0.622733%;"><span class="irs-grid-pol"
+                                                style="left: 0%"></span><span class="irs-grid-text js-grid-text-0"
+                                                style="left: 0%; margin-left: -0.72684%;">0</span><span
+                                                class="irs-grid-pol small" style="left: 12.5%"></span><span
+                                                class="irs-grid-pol small" style="left: 8.333333333333334%"></span><span
+                                                class="irs-grid-pol small" style="left: 4.166666666666668%"></span><span
+                                                class="irs-grid-pol" style="left: 16.666666666666668%"></span><span
+                                                class="irs-grid-text js-grid-text-1"
+                                                style="left: 16.6667%; visibility: visible; margin-left: -1.05844%;">10</span><span
+                                                class="irs-grid-pol small"
+                                                style="left: 29.166666666666668%"></span><span
+                                                class="irs-grid-pol small" style="left: 25%"></span><span
+                                                class="irs-grid-pol small"
+                                                style="left: 20.833333333333336%"></span><span class="irs-grid-pol"
+                                                style="left: 33.333333333333336%"></span><span
+                                                class="irs-grid-text js-grid-text-2"
+                                                style="left: 33.3333%; visibility: visible; margin-left: -1.39106%;">100</span><span
+                                                class="irs-grid-pol small"
+                                                style="left: 45.833333333333336%"></span><span
+                                                class="irs-grid-pol small" style="left: 41.66666666666667%"></span><span
+                                                class="irs-grid-pol small" style="left: 37.5%"></span><span
+                                                class="irs-grid-pol" style="left: 50%"></span><span
+                                                class="irs-grid-text js-grid-text-3"
+                                                style="left: 50%; visibility: visible; margin-left: -1.86945%;">1
+                                                000</span><span class="irs-grid-pol small"
+                                                style="left: 62.5%"></span><span class="irs-grid-pol small"
+                                                style="left: 58.333333333333336%"></span><span
+                                                class="irs-grid-pol small" style="left: 54.16666666666667%"></span><span
+                                                class="irs-grid-pol" style="left: 66.66666666666667%"></span><span
+                                                class="irs-grid-text js-grid-text-4"
+                                                style="left: 66.6667%; margin-left: -2.20105%;">10 000</span><span
+                                                class="irs-grid-pol small" style="left: 79.16666666666667%"></span><span
+                                                class="irs-grid-pol small" style="left: 75%"></span><span
+                                                class="irs-grid-pol small" style="left: 70.83333333333334%"></span><span
+                                                class="irs-grid-pol" style="left: 83.33333333333334%"></span><span
+                                                class="irs-grid-text js-grid-text-5"
+                                                style="left: 83.3333%; visibility: visible; margin-left: -2.53367%;">100
+                                                000</span><span class="irs-grid-pol small"
+                                                style="left: 95.83333333333334%"></span><span class="irs-grid-pol small"
+                                                style="left: 91.66666666666667%"></span><span class="irs-grid-pol small"
+                                                style="left: 87.5%"></span><span class="irs-grid-pol"
+                                                style="left: 100%"></span><span class="irs-grid-text js-grid-text-6"
+                                                style="left: 100%; visibility: visible; margin-left: -3.01208%;">1 000
+                                                000</span></span><span class="irs-bar"
+                                            style="left: 17.1485%; width: 65.703%;"></span><span
+                                            class="irs-shadow shadow-from" style="display: none;"></span><span
+                                            class="irs-shadow shadow-to" style="display: none;"></span><span
+                                            class="irs-slider from" style="left: 16.4258%;"></span><span
+                                            class="irs-slider to type_last" style="left: 82.1288%;"></span></span><input
+                                        id="range_07" type="text" name="example_name" value="" class="irs-hidden-input"
+                                        tabindex="-1" readonly="">
+                                    <hr>
+                                    <h6>Using any strings as your values</h6>
+                                    <span class="irs js-irs-7 irs-with-grid"><span class="irs"><span class="irs-line"
+                                                tabindex="0"><span class="irs-line-left"></span><span
+                                                    class="irs-line-mid"></span><span
+                                                    class="irs-line-right"></span></span><span class="irs-min"
+                                                style="visibility: visible;">zero</span><span class="irs-max"
+                                                style="visibility: visible;">ten</span><span class="irs-from"
+                                                style="visibility: hidden;">0</span><span class="irs-to"
+                                                style="visibility: hidden;">0</span><span class="irs-single"
+                                                style="left: 48.3164%;">five</span></span><span class="irs-grid"
+                                            style="width: 98.5545%; left: 0.622733%;"><span class="irs-grid-pol"
+                                                style="left: 0%"></span><span class="irs-grid-text js-grid-text-0"
+                                                style="left: 0%; margin-left: -1.5276%;">zero</span><span
+                                                class="irs-grid-pol small" style="left: 6.666666666666666%"></span><span
+                                                class="irs-grid-pol small" style="left: 3.333333333333333%"></span><span
+                                                class="irs-grid-pol" style="left: 10%"></span><span
+                                                class="irs-grid-text js-grid-text-1"
+                                                style="left: 10%; visibility: visible; margin-left: -1.37155%;">one</span><span
+                                                class="irs-grid-pol small"
+                                                style="left: 16.666666666666668%"></span><span
+                                                class="irs-grid-pol small"
+                                                style="left: 13.333333333333332%"></span><span class="irs-grid-pol"
+                                                style="left: 20%"></span><span class="irs-grid-text js-grid-text-2"
+                                                style="left: 20%; visibility: visible; margin-left: -1.3695%;">two</span><span
+                                                class="irs-grid-pol small"
+                                                style="left: 26.666666666666668%"></span><span
+                                                class="irs-grid-pol small"
+                                                style="left: 23.333333333333332%"></span><span class="irs-grid-pol"
+                                                style="left: 30%"></span><span class="irs-grid-text js-grid-text-3"
+                                                style="left: 30%; visibility: visible; margin-left: -1.73497%;">three</span><span
+                                                class="irs-grid-pol small"
+                                                style="left: 36.666666666666664%"></span><span
+                                                class="irs-grid-pol small"
+                                                style="left: 33.333333333333336%"></span><span class="irs-grid-pol"
+                                                style="left: 40%"></span><span class="irs-grid-text js-grid-text-4"
+                                                style="left: 40%; margin-left: -1.46292%;">four</span><span
+                                                class="irs-grid-pol small"
+                                                style="left: 46.666666666666664%"></span><span
+                                                class="irs-grid-pol small"
+                                                style="left: 43.333333333333336%"></span><span class="irs-grid-pol"
+                                                style="left: 50%"></span><span class="irs-grid-text js-grid-text-5"
+                                                style="left: 50%; visibility: visible; margin-left: -1.31817%;">five</span><span
+                                                class="irs-grid-pol small"
+                                                style="left: 56.666666666666664%"></span><span
+                                                class="irs-grid-pol small"
+                                                style="left: 53.333333333333336%"></span><span class="irs-grid-pol"
+                                                style="left: 60%"></span><span class="irs-grid-text js-grid-text-6"
+                                                style="left: 60%; visibility: visible; margin-left: -1.13646%;">six</span><span
+                                                class="irs-grid-pol small" style="left: 66.66666666666667%"></span><span
+                                                class="irs-grid-pol small"
+                                                style="left: 63.333333333333336%"></span><span class="irs-grid-pol"
+                                                style="left: 70%"></span><span class="irs-grid-text js-grid-text-7"
+                                                style="left: 70%; visibility: visible; margin-left: -1.93105%;">seven</span><span
+                                                class="irs-grid-pol small" style="left: 76.66666666666667%"></span><span
+                                                class="irs-grid-pol small" style="left: 73.33333333333333%"></span><span
+                                                class="irs-grid-pol" style="left: 80%"></span><span
+                                                class="irs-grid-text js-grid-text-8"
+                                                style="left: 80%; margin-left: -1.70212%;">eight</span><span
+                                                class="irs-grid-pol small" style="left: 86.66666666666667%"></span><span
+                                                class="irs-grid-pol small" style="left: 83.33333333333333%"></span><span
+                                                class="irs-grid-pol" style="left: 90%"></span><span
+                                                class="irs-grid-text js-grid-text-9"
+                                                style="left: 90%; visibility: visible; margin-left: -1.50398%;">nine</span><span
+                                                class="irs-grid-pol small" style="left: 96.66666666666667%"></span><span
+                                                class="irs-grid-pol small" style="left: 93.33333333333333%"></span><span
+                                                class="irs-grid-pol" style="left: 100%"></span><span
+                                                class="irs-grid-text js-grid-text-10"
+                                                style="left: 100%; visibility: visible; margin-left: -1.22783%;">ten</span></span><span
+                                            class="irs-bar" style="left: 0.722733%; width: 49.2773%;"></span><span
+                                            class="irs-bar-edge"></span><span class="irs-shadow shadow-single"
+                                            style="display: none;"></span><span class="irs-slider single"
+                                            style="left: 49.2773%;"></span></span><input id="range_08" type="text"
+                                        name="example_name" value="" class="irs-hidden-input" tabindex="-1" readonly="">
+                                    <hr>
+                                    <h6>One more example with strings</h6>
+                                    <span class="irs js-irs-8 irs-with-grid"><span class="irs"><span class="irs-line"
+                                                tabindex="0"><span class="irs-line-left"></span><span
+                                                    class="irs-line-mid"></span><span
+                                                    class="irs-line-right"></span></span><span class="irs-min"
+                                                style="visibility: visible;">January</span><span class="irs-max"
+                                                style="visibility: visible;">December</span><span class="irs-from"
+                                                style="visibility: hidden;">0</span><span class="irs-to"
+                                                style="visibility: hidden;">0</span><span class="irs-single"
+                                                style="left: 25.6055%;">April</span></span><span class="irs-grid"
+                                            style="width: 98.5545%; left: 0.622733%;"><span class="irs-grid-pol"
+                                                style="left: 0%"></span><span class="irs-grid-text js-grid-text-0"
+                                                style="left: 0%; margin-left: -2.50185%;">January</span><span
+                                                class="irs-grid-pol small"
+                                                style="left: 6.0606060606060606%"></span><span
+                                                class="irs-grid-pol small"
+                                                style="left: 3.0303030303030303%"></span><span class="irs-grid-pol"
+                                                style="left: 9.090909090909092%"></span><span
+                                                class="irs-grid-text js-grid-text-1"
+                                                style="left: 9.09091%; visibility: visible; margin-left: -2.69382%;">February</span><span
+                                                class="irs-grid-pol small"
+                                                style="left: 15.151515151515152%"></span><span
+                                                class="irs-grid-pol small"
+                                                style="left: 12.121212121212121%"></span><span class="irs-grid-pol"
+                                                style="left: 18.181818181818183%"></span><span
+                                                class="irs-grid-text js-grid-text-2"
+                                                style="left: 18.1818%; visibility: visible; margin-left: -2.06246%;">March</span><span
+                                                class="irs-grid-pol small"
+                                                style="left: 24.242424242424242%"></span><span
+                                                class="irs-grid-pol small"
+                                                style="left: 21.212121212121215%"></span><span class="irs-grid-pol"
+                                                style="left: 27.272727272727273%"></span><span
+                                                class="irs-grid-text js-grid-text-3"
+                                                style="left: 27.2727%; visibility: visible; margin-left: -1.59946%;">April</span><span
+                                                class="irs-grid-pol small"
+                                                style="left: 33.333333333333336%"></span><span
+                                                class="irs-grid-pol small"
+                                                style="left: 30.303030303030305%"></span><span class="irs-grid-pol"
+                                                style="left: 36.36363636363637%"></span><span
+                                                class="irs-grid-text js-grid-text-4"
+                                                style="left: 36.3636%; margin-left: -1.50809%;">May</span><span
+                                                class="irs-grid-pol small" style="left: 42.42424242424243%"></span><span
+                                                class="irs-grid-pol small" style="left: 39.3939393939394%"></span><span
+                                                class="irs-grid-pol" style="left: 45.45454545454546%"></span><span
+                                                class="irs-grid-text js-grid-text-5"
+                                                style="left: 45.4545%; visibility: visible; margin-left: -1.68672%;">June</span><span
+                                                class="irs-grid-pol small"
+                                                style="left: 51.515151515151516%"></span><span
+                                                class="irs-grid-pol small" style="left: 48.48484848484849%"></span><span
+                                                class="irs-grid-pol" style="left: 54.54545454545455%"></span><span
+                                                class="irs-grid-text js-grid-text-6"
+                                                style="left: 54.5455%; visibility: visible; margin-left: -1.47011%;">July</span><span
+                                                class="irs-grid-pol small" style="left: 60.60606060606061%"></span><span
+                                                class="irs-grid-pol small" style="left: 57.57575757575758%"></span><span
+                                                class="irs-grid-pol" style="left: 63.63636363636364%"></span><span
+                                                class="irs-grid-text js-grid-text-7"
+                                                style="left: 63.6364%; visibility: visible; margin-left: -2.25957%;">August</span><span
+                                                class="irs-grid-pol small" style="left: 69.6969696969697%"></span><span
+                                                class="irs-grid-pol small" style="left: 66.66666666666667%"></span><span
+                                                class="irs-grid-pol" style="left: 72.72727272727273%"></span><span
+                                                class="irs-grid-text js-grid-text-8"
+                                                style="left: 72.7273%; margin-left: -3.26051%;">September</span><span
+                                                class="irs-grid-pol small" style="left: 78.7878787878788%"></span><span
+                                                class="irs-grid-pol small" style="left: 75.75757575757576%"></span><span
+                                                class="irs-grid-pol" style="left: 81.81818181818183%"></span><span
+                                                class="irs-grid-text js-grid-text-9"
+                                                style="left: 81.8182%; visibility: visible; margin-left: -2.48029%;">October</span><span
+                                                class="irs-grid-pol small" style="left: 87.87878787878789%"></span><span
+                                                class="irs-grid-pol small" style="left: 84.84848484848486%"></span><span
+                                                class="irs-grid-pol" style="left: 90.90909090909092%"></span><span
+                                                class="irs-grid-text js-grid-text-10"
+                                                style="left: 90.9091%; visibility: visible; margin-left: -3.10857%;">November</span><span
+                                                class="irs-grid-pol small" style="left: 96.96969696969697%"></span><span
+                                                class="irs-grid-pol small" style="left: 93.93939393939395%"></span><span
+                                                class="irs-grid-pol" style="left: 100%"></span><span
+                                                class="irs-grid-text js-grid-text-11"
+                                                style="left: 100%; visibility: visible; margin-left: -3.08188%;">December</span></span><span
+                                            class="irs-bar" style="left: 0.722733%; width: 26.8785%;"></span><span
+                                            class="irs-bar-edge"></span><span class="irs-shadow shadow-single"
+                                            style="display: none;"></span><span class="irs-slider single"
+                                            style="left: 26.8785%;"></span></span><input id="range_09" type="text"
+                                        name="example_name" value="" class="irs-hidden-input" tabindex="-1" readonly="">
+                                    <hr>
+                                    <h6>No prettify. Big numbers are ugly and unreadable</h6>
+                                    <span class="irs js-irs-9 irs-with-grid"><span class="irs"><span class="irs-line"
+                                                tabindex="0"><span class="irs-line-left"></span><span
+                                                    class="irs-line-mid"></span><span
+                                                    class="irs-line-right"></span></span><span class="irs-min"
+                                                style="visibility: visible;">1000</span><span class="irs-max"
+                                                style="visibility: visible;">1000000</span><span class="irs-from"
+                                                style="visibility: hidden;">0</span><span class="irs-to"
+                                                style="visibility: hidden;">0</span><span class="irs-single"
+                                                style="left: 7.61797%;">100000</span></span><span class="irs-grid"
+                                            style="width: 98.5545%; left: 0.622733%;"><span class="irs-grid-pol"
+                                                style="left: 0%"></span><span class="irs-grid-text js-grid-text-0"
+                                                style="left: 0%; margin-left: -1.72265%;">1000</span><span
+                                                class="irs-grid-pol small" style="left: 20%"></span><span
+                                                class="irs-grid-pol small" style="left: 15%"></span><span
+                                                class="irs-grid-pol small" style="left: 10%"></span><span
+                                                class="irs-grid-pol small" style="left: 5%"></span><span
+                                                class="irs-grid-pol" style="left: 25%"></span><span
+                                                class="irs-grid-text js-grid-text-1"
+                                                style="left: 25%; visibility: visible; margin-left: -2.38687%;">250750</span><span
+                                                class="irs-grid-pol small" style="left: 45%"></span><span
+                                                class="irs-grid-pol small" style="left: 40%"></span><span
+                                                class="irs-grid-pol small" style="left: 35%"></span><span
+                                                class="irs-grid-pol small" style="left: 30%"></span><span
+                                                class="irs-grid-pol" style="left: 50%"></span><span
+                                                class="irs-grid-text js-grid-text-2"
+                                                style="left: 50%; visibility: visible; margin-left: -2.38687%;">500500</span><span
+                                                class="irs-grid-pol small" style="left: 70%"></span><span
+                                                class="irs-grid-pol small" style="left: 65%"></span><span
+                                                class="irs-grid-pol small" style="left: 60%"></span><span
+                                                class="irs-grid-pol small" style="left: 55%"></span><span
+                                                class="irs-grid-pol" style="left: 75%"></span><span
+                                                class="irs-grid-text js-grid-text-3"
+                                                style="left: 75%; visibility: visible; margin-left: -2.38687%;">750250</span><span
+                                                class="irs-grid-pol small" style="left: 95%"></span><span
+                                                class="irs-grid-pol small" style="left: 90%"></span><span
+                                                class="irs-grid-pol small" style="left: 85%"></span><span
+                                                class="irs-grid-pol small" style="left: 80%"></span><span
+                                                class="irs-grid-pol" style="left: 100%"></span><span
+                                                class="irs-grid-text js-grid-text-4"
+                                                style="left: 100%; margin-left: -2.71949%;">1000000</span></span><span
+                                            class="irs-bar" style="left: 0.722733%; width: 9.76667%;"></span><span
+                                            class="irs-bar-edge"></span><span class="irs-shadow shadow-single"
+                                            style="display: none;"></span><span class="irs-slider single"
+                                            style="left: 9.76667%;"></span></span><input id="range_10" type="text"
+                                        name="example_name" value="" class="irs-hidden-input" tabindex="-1" readonly="">
+                                    <hr>
+                                    <h6>Prettify enabled. Much better!</h6>
+                                    <span class="irs js-irs-10 irs-with-grid"><span class="irs"><span class="irs-line"
+                                                tabindex="0"><span class="irs-line-left"></span><span
+                                                    class="irs-line-mid"></span><span
+                                                    class="irs-line-right"></span></span><span class="irs-min"
+                                                style="visibility: visible;">1 000</span><span class="irs-max"
+                                                style="visibility: visible;">1 000 000</span><span class="irs-from"
+                                                style="visibility: hidden;">0</span><span class="irs-to"
+                                                style="visibility: hidden;">0</span><span class="irs-single"
+                                                style="left: 17.3211%;">200 000</span></span><span class="irs-grid"
+                                            style="width: 98.5545%; left: 0.622733%;"><span class="irs-grid-pol"
+                                                style="left: 0%"></span><span class="irs-grid-text js-grid-text-0"
+                                                style="left: 0%; margin-left: -1.86945%;">1 000</span><span
+                                                class="irs-grid-pol small" style="left: 20%"></span><span
+                                                class="irs-grid-pol small" style="left: 15%"></span><span
+                                                class="irs-grid-pol small" style="left: 10%"></span><span
+                                                class="irs-grid-pol small" style="left: 5%"></span><span
+                                                class="irs-grid-pol" style="left: 25%"></span><span
+                                                class="irs-grid-text js-grid-text-1"
+                                                style="left: 25%; visibility: visible; margin-left: -2.53367%;">250
+                                                750</span><span class="irs-grid-pol small"
+                                                style="left: 45%"></span><span class="irs-grid-pol small"
+                                                style="left: 40%"></span><span class="irs-grid-pol small"
+                                                style="left: 35%"></span><span class="irs-grid-pol small"
+                                                style="left: 30%"></span><span class="irs-grid-pol"
+                                                style="left: 50%"></span><span class="irs-grid-text js-grid-text-2"
+                                                style="left: 50%; visibility: visible; margin-left: -2.53367%;">500
+                                                500</span><span class="irs-grid-pol small"
+                                                style="left: 70%"></span><span class="irs-grid-pol small"
+                                                style="left: 65%"></span><span class="irs-grid-pol small"
+                                                style="left: 60%"></span><span class="irs-grid-pol small"
+                                                style="left: 55%"></span><span class="irs-grid-pol"
+                                                style="left: 75%"></span><span class="irs-grid-text js-grid-text-3"
+                                                style="left: 75%; visibility: visible; margin-left: -2.53367%;">750
+                                                250</span><span class="irs-grid-pol small"
+                                                style="left: 95%"></span><span class="irs-grid-pol small"
+                                                style="left: 90%"></span><span class="irs-grid-pol small"
+                                                style="left: 85%"></span><span class="irs-grid-pol small"
+                                                style="left: 80%"></span><span class="irs-grid-pol"
+                                                style="left: 100%"></span><span class="irs-grid-text js-grid-text-4"
+                                                style="left: 100%; margin-left: -3.01208%;">1 000 000</span></span><span
+                                            class="irs-bar" style="left: 0.722733%; width: 19.632%;"></span><span
+                                            class="irs-bar-edge"></span><span class="irs-shadow shadow-single"
+                                            style="display: none;"></span><span class="irs-slider single"
+                                            style="left: 19.632%;"></span></span><input id="range_11" type="text"
+                                        name="example_name" value="" class="irs-hidden-input" tabindex="-1" readonly="">
+                                    <hr>
+                                    <h6>Don't like space as separator? Use anything you like!</h6>
+                                    <span class="irs js-irs-11 irs-with-grid"><span class="irs"><span class="irs-line"
+                                                tabindex="0"><span class="irs-line-left"></span><span
+                                                    class="irs-line-mid"></span><span
+                                                    class="irs-line-right"></span></span><span class="irs-min"
+                                                style="visibility: visible;">1.000</span><span class="irs-max"
+                                                style="visibility: visible;">1.000.000</span><span class="irs-from"
+                                                style="visibility: hidden;">0</span><span class="irs-to"
+                                                style="visibility: hidden;">0</span><span class="irs-single"
+                                                style="left: 27.1761%;">300.000</span></span><span class="irs-grid"
+                                            style="width: 98.5545%; left: 0.622733%;"><span class="irs-grid-pol"
+                                                style="left: 0%"></span><span class="irs-grid-text js-grid-text-0"
+                                                style="left: 0%; margin-left: -1.8787%;">1.000</span><span
+                                                class="irs-grid-pol small" style="left: 20%"></span><span
+                                                class="irs-grid-pol small" style="left: 15%"></span><span
+                                                class="irs-grid-pol small" style="left: 10%"></span><span
+                                                class="irs-grid-pol small" style="left: 5%"></span><span
+                                                class="irs-grid-pol" style="left: 25%"></span><span
+                                                class="irs-grid-text js-grid-text-1"
+                                                style="left: 25%; visibility: visible; margin-left: -2.54291%;">250.750</span><span
+                                                class="irs-grid-pol small" style="left: 45%"></span><span
+                                                class="irs-grid-pol small" style="left: 40%"></span><span
+                                                class="irs-grid-pol small" style="left: 35%"></span><span
+                                                class="irs-grid-pol small" style="left: 30%"></span><span
+                                                class="irs-grid-pol" style="left: 50%"></span><span
+                                                class="irs-grid-text js-grid-text-2"
+                                                style="left: 50%; visibility: visible; margin-left: -2.54291%;">500.500</span><span
+                                                class="irs-grid-pol small" style="left: 70%"></span><span
+                                                class="irs-grid-pol small" style="left: 65%"></span><span
+                                                class="irs-grid-pol small" style="left: 60%"></span><span
+                                                class="irs-grid-pol small" style="left: 55%"></span><span
+                                                class="irs-grid-pol" style="left: 75%"></span><span
+                                                class="irs-grid-text js-grid-text-3"
+                                                style="left: 75%; visibility: visible; margin-left: -2.54291%;">750.250</span><span
+                                                class="irs-grid-pol small" style="left: 95%"></span><span
+                                                class="irs-grid-pol small" style="left: 90%"></span><span
+                                                class="irs-grid-pol small" style="left: 85%"></span><span
+                                                class="irs-grid-pol small" style="left: 80%"></span><span
+                                                class="irs-grid-pol" style="left: 100%"></span><span
+                                                class="irs-grid-text js-grid-text-4"
+                                                style="left: 100%; margin-left: -3.03055%;">1.000.000</span></span><span
+                                            class="irs-bar" style="left: 0.722733%; width: 29.4973%;"></span><span
+                                            class="irs-bar-edge"></span><span class="irs-shadow shadow-single"
+                                            style="display: none;"></span><span class="irs-slider single"
+                                            style="left: 29.4973%;"></span></span><input id="range_12" type="text"
+                                        name="example_name" value="" class="irs-hidden-input" tabindex="-1" readonly="">
+                                    <hr>
+                                    <h6>You don't like default prettify function? Use your own!</h6>
+                                    <span class="irs js-irs-12 irs-with-grid"><span class="irs"><span class="irs-line"
+                                                tabindex="0"><span class="irs-line-left"></span><span
+                                                    class="irs-line-mid"></span><span
+                                                    class="irs-line-right"></span></span><span class="irs-min"
+                                                style="visibility: visible;">285</span><span class="irs-max"
+                                                style="visibility: visible;">609924</span><span class="irs-from"
+                                                style="visibility: hidden;">0</span><span class="irs-to"
+                                                style="visibility: hidden;">0</span><span class="irs-single"
+                                                style="left: 37.2139%;">166243</span></span><span class="irs-grid"
+                                            style="width: 98.5545%; left: 0.622733%;"><span class="irs-grid-pol"
+                                                style="left: 0%"></span><span class="irs-grid-text js-grid-text-0"
+                                                style="left: 0%; margin-left: -1.39106%;">617</span><span
+                                                class="irs-grid-pol small" style="left: 20%"></span><span
+                                                class="irs-grid-pol small" style="left: 15%"></span><span
+                                                class="irs-grid-pol small" style="left: 10%"></span><span
+                                                class="irs-grid-pol small" style="left: 5%"></span><span
+                                                class="irs-grid-pol" style="left: 25%"></span><span
+                                                class="irs-grid-text js-grid-text-1"
+                                                style="left: 25%; visibility: visible; margin-left: -2.38687%;">235995</span><span
+                                                class="irs-grid-pol small" style="left: 45%"></span><span
+                                                class="irs-grid-pol small" style="left: 40%"></span><span
+                                                class="irs-grid-pol small" style="left: 35%"></span><span
+                                                class="irs-grid-pol small" style="left: 30%"></span><span
+                                                class="irs-grid-pol" style="left: 50%"></span><span
+                                                class="irs-grid-text js-grid-text-2"
+                                                style="left: 50%; visibility: visible; margin-left: -2.05527%;">30005</span><span
+                                                class="irs-grid-pol small" style="left: 70%"></span><span
+                                                class="irs-grid-pol small" style="left: 65%"></span><span
+                                                class="irs-grid-pol small" style="left: 60%"></span><span
+                                                class="irs-grid-pol small" style="left: 55%"></span><span
+                                                class="irs-grid-pol" style="left: 75%"></span><span
+                                                class="irs-grid-text js-grid-text-3"
+                                                style="left: 75%; visibility: visible; margin-left: -2.38687%;">271009</span><span
+                                                class="irs-grid-pol small" style="left: 95%"></span><span
+                                                class="irs-grid-pol small" style="left: 90%"></span><span
+                                                class="irs-grid-pol small" style="left: 85%"></span><span
+                                                class="irs-grid-pol small" style="left: 80%"></span><span
+                                                class="irs-grid-pol" style="left: 100%"></span><span
+                                                class="irs-grid-text js-grid-text-4"
+                                                style="left: 100%; margin-left: -2.38687%;">559519</span></span><span
+                                            class="irs-bar" style="left: 0.722733%; width: 39.3626%;"></span><span
+                                            class="irs-bar-edge"></span><span class="irs-shadow shadow-single"
+                                            style="display: none;"></span><span class="irs-slider single"
+                                            style="left: 39.3626%;"></span></span><input id="range_13" type="text"
+                                        name="example_name" value="" class="irs-hidden-input" tabindex="-1" readonly="">
+                                    <hr>
+                                    <h6>Using prefixes</h6>
+                                    <span class="irs js-irs-13 irs-with-grid"><span class="irs"><span class="irs-line"
+                                                tabindex="0"><span class="irs-line-left"></span><span
+                                                    class="irs-line-mid"></span><span
+                                                    class="irs-line-right"></span></span><span class="irs-min"
+                                                style="visibility: visible;">$0</span><span class="irs-max"
+                                                style="visibility: hidden;">$10 000</span><span class="irs-from"
+                                                style="visibility: visible; left: 7.91311%;">$1 000</span><span
+                                                class="irs-to" style="visibility: visible; left: 96.2436%;">$10
+                                                000</span><span class="irs-single"
+                                                style="visibility: hidden; left: 49.2326%;">$1 000 — $10
+                                                000</span></span><span class="irs-grid"
+                                            style="width: 98.5545%; left: 0.622733%;"><span class="irs-grid-pol"
+                                                style="left: 0%"></span><span class="irs-grid-text js-grid-text-0"
+                                                style="left: 0%; margin-left: -0.72684%;">0</span><span
+                                                class="irs-grid-pol small" style="left: 20%"></span><span
+                                                class="irs-grid-pol small" style="left: 15%"></span><span
+                                                class="irs-grid-pol small" style="left: 10%"></span><span
+                                                class="irs-grid-pol small" style="left: 5%"></span><span
+                                                class="irs-grid-pol" style="left: 25%"></span><span
+                                                class="irs-grid-text js-grid-text-1"
+                                                style="left: 25%; visibility: visible; margin-left: -1.86945%;">2
+                                                500</span><span class="irs-grid-pol small"
+                                                style="left: 45%"></span><span class="irs-grid-pol small"
+                                                style="left: 40%"></span><span class="irs-grid-pol small"
+                                                style="left: 35%"></span><span class="irs-grid-pol small"
+                                                style="left: 30%"></span><span class="irs-grid-pol"
+                                                style="left: 50%"></span><span class="irs-grid-text js-grid-text-2"
+                                                style="left: 50%; visibility: visible; margin-left: -1.86945%;">5
+                                                000</span><span class="irs-grid-pol small"
+                                                style="left: 70%"></span><span class="irs-grid-pol small"
+                                                style="left: 65%"></span><span class="irs-grid-pol small"
+                                                style="left: 60%"></span><span class="irs-grid-pol small"
+                                                style="left: 55%"></span><span class="irs-grid-pol"
+                                                style="left: 75%"></span><span class="irs-grid-text js-grid-text-3"
+                                                style="left: 75%; visibility: visible; margin-left: -1.86945%;">7
+                                                500</span><span class="irs-grid-pol small"
+                                                style="left: 95%"></span><span class="irs-grid-pol small"
+                                                style="left: 90%"></span><span class="irs-grid-pol small"
+                                                style="left: 85%"></span><span class="irs-grid-pol small"
+                                                style="left: 80%"></span><span class="irs-grid-pol"
+                                                style="left: 100%"></span><span class="irs-grid-text js-grid-text-4"
+                                                style="left: 100%; margin-left: -2.20105%;">10 000</span></span><span
+                                            class="irs-bar" style="left: 10.5782%; width: 88.6991%;"></span><span
+                                            class="irs-shadow shadow-from" style="display: none;"></span><span
+                                            class="irs-shadow shadow-to" style="display: none;"></span><span
+                                            class="irs-slider from type_last" style="left: 9.85545%;"></span><span
+                                            class="irs-slider to" style="left: 98.5545%;"></span></span><input
+                                        id="range_14" type="text" name="example_name" value="" class="irs-hidden-input"
+                                        tabindex="-1" readonly="">
+                                    <hr>
+                                    <h6>Using postfixes</h6>
+                                    <span class="irs js-irs-14 irs-with-grid"><span class="irs"><span class="irs-line"
+                                                tabindex="0"><span class="irs-line-left"></span><span
+                                                    class="irs-line-mid"></span><span
+                                                    class="irs-line-right"></span></span><span class="irs-min"
+                                                style="visibility: visible;">-90°</span><span class="irs-max"
+                                                style="visibility: visible;">90°</span><span class="irs-from"
+                                                style="visibility: hidden;">0</span><span class="irs-to"
+                                                style="visibility: hidden;">0</span><span class="irs-single"
+                                                style="left: 48.728%;">0°</span></span><span class="irs-grid"
+                                            style="width: 98.5545%; left: 0.622733%;"><span class="irs-grid-pol"
+                                                style="left: 0%"></span><span class="irs-grid-text js-grid-text-0"
+                                                style="left: 0%; margin-left: -1.22167%;">-90</span><span
+                                                class="irs-grid-pol small" style="left: 20%"></span><span
+                                                class="irs-grid-pol small" style="left: 15%"></span><span
+                                                class="irs-grid-pol small" style="left: 10%"></span><span
+                                                class="irs-grid-pol small" style="left: 5%"></span><span
+                                                class="irs-grid-pol" style="left: 25%"></span><span
+                                                class="irs-grid-text js-grid-text-1"
+                                                style="left: 25%; visibility: visible; margin-left: -1.22167%;">-45</span><span
+                                                class="irs-grid-pol small" style="left: 45%"></span><span
+                                                class="irs-grid-pol small" style="left: 40%"></span><span
+                                                class="irs-grid-pol small" style="left: 35%"></span><span
+                                                class="irs-grid-pol small" style="left: 30%"></span><span
+                                                class="irs-grid-pol" style="left: 50%"></span><span
+                                                class="irs-grid-text js-grid-text-2"
+                                                style="left: 50%; visibility: visible; margin-left: -0.72684%;">0</span><span
+                                                class="irs-grid-pol small" style="left: 70%"></span><span
+                                                class="irs-grid-pol small" style="left: 65%"></span><span
+                                                class="irs-grid-pol small" style="left: 60%"></span><span
+                                                class="irs-grid-pol small" style="left: 55%"></span><span
+                                                class="irs-grid-pol" style="left: 75%"></span><span
+                                                class="irs-grid-text js-grid-text-3"
+                                                style="left: 75%; visibility: visible; margin-left: -1.05844%;">45</span><span
+                                                class="irs-grid-pol small" style="left: 95%"></span><span
+                                                class="irs-grid-pol small" style="left: 90%"></span><span
+                                                class="irs-grid-pol small" style="left: 85%"></span><span
+                                                class="irs-grid-pol small" style="left: 80%"></span><span
+                                                class="irs-grid-pol" style="left: 100%"></span><span
+                                                class="irs-grid-text js-grid-text-4"
+                                                style="left: 100%; margin-left: -1.05844%;">90</span></span><span
+                                            class="irs-bar" style="left: 0.722733%; width: 49.2773%;"></span><span
+                                            class="irs-bar-edge"></span><span class="irs-shadow shadow-single"
+                                            style="display: none;"></span><span class="irs-slider single"
+                                            style="left: 49.2773%;"></span></span><input id="range_15" type="text"
+                                        name="example_name" value="" class="irs-hidden-input" tabindex="-1" readonly="">
+                                    <hr>
+                                    <h6>Whant to show that max number is not the biggest one?</h6>
+                                    <span class="irs js-irs-15 irs-with-grid"><span class="irs"><span class="irs-line"
+                                                tabindex="0"><span class="irs-line-left"></span><span
+                                                    class="irs-line-mid"></span><span
+                                                    class="irs-line-right"></span></span><span class="irs-min"
+                                                style="visibility: visible;">Age 18</span><span class="irs-max"
+                                                style="visibility: visible;">Age 70+</span><span class="irs-from"
+                                                style="visibility: hidden;">0</span><span class="irs-to"
+                                                style="visibility: hidden;">0</span><span class="irs-single"
+                                                style="left: 20.763%;">Age 30</span></span><span class="irs-grid"
+                                            style="width: 98.5545%; left: 0.622733%;"><span class="irs-grid-pol"
+                                                style="left: 0%"></span><span class="irs-grid-text js-grid-text-0"
+                                                style="left: 0%; margin-left: -1.05844%;">18</span><span
+                                                class="irs-grid-pol small" style="left: 20%"></span><span
+                                                class="irs-grid-pol small" style="left: 15%"></span><span
+                                                class="irs-grid-pol small" style="left: 10%"></span><span
+                                                class="irs-grid-pol small" style="left: 5%"></span><span
+                                                class="irs-grid-pol" style="left: 25%"></span><span
+                                                class="irs-grid-text js-grid-text-1"
+                                                style="left: 25%; visibility: visible; margin-left: -1.05844%;">31</span><span
+                                                class="irs-grid-pol small" style="left: 45%"></span><span
+                                                class="irs-grid-pol small" style="left: 40%"></span><span
+                                                class="irs-grid-pol small" style="left: 35%"></span><span
+                                                class="irs-grid-pol small" style="left: 30%"></span><span
+                                                class="irs-grid-pol" style="left: 50%"></span><span
+                                                class="irs-grid-text js-grid-text-2"
+                                                style="left: 50%; visibility: visible; margin-left: -1.05844%;">44</span><span
+                                                class="irs-grid-pol small" style="left: 70%"></span><span
+                                                class="irs-grid-pol small" style="left: 65%"></span><span
+                                                class="irs-grid-pol small" style="left: 60%"></span><span
+                                                class="irs-grid-pol small" style="left: 55%"></span><span
+                                                class="irs-grid-pol" style="left: 75%"></span><span
+                                                class="irs-grid-text js-grid-text-3"
+                                                style="left: 75%; visibility: visible; margin-left: -1.05844%;">57</span><span
+                                                class="irs-grid-pol small" style="left: 95%"></span><span
+                                                class="irs-grid-pol small" style="left: 90%"></span><span
+                                                class="irs-grid-pol small" style="left: 85%"></span><span
+                                                class="irs-grid-pol small" style="left: 80%"></span><span
+                                                class="irs-grid-pol" style="left: 100%"></span><span
+                                                class="irs-grid-text js-grid-text-4"
+                                                style="left: 100%; margin-left: -1.05844%;">70</span></span><span
+                                            class="irs-bar" style="left: 0.722733%; width: 22.7434%;"></span><span
+                                            class="irs-bar-edge"></span><span class="irs-shadow shadow-single"
+                                            style="display: none;"></span><span class="irs-slider single"
+                                            style="left: 22.7434%;"></span></span><input id="range_16" type="text"
+                                        name="example_name" value="" class="irs-hidden-input" tabindex="-1" readonly="">
+                                    <hr>
+                                    <h6>Taking care about how from and to values connect? Use decorate_both option:</h6>
+                                    <span class="irs js-irs-16"><span class="irs"><span class="irs-line"
+                                                tabindex="0"><span class="irs-line-left"></span><span
+                                                    class="irs-line-mid"></span><span
+                                                    class="irs-line-right"></span></span><span class="irs-min"
+                                                style="visibility: visible;">Weight: 100 million pounds</span><span
+                                                class="irs-max" style="visibility: visible;">Weight: 200 million
+                                                pounds</span><span class="irs-from"
+                                                style="visibility: hidden; left: 36.5073%;">Weight: 145 million
+                                                pounds</span><span class="irs-to"
+                                                style="visibility: hidden; left: 46.3627%;">Weight: 155 million
+                                                pounds</span><span class="irs-single"
+                                                style="visibility: visible; left: 32.6883%;">Weight: 145 million pounds
+                                                — Weight: 155 million pounds</span></span><span
+                                            class="irs-grid"></span><span class="irs-bar"
+                                            style="left: 45.0723%; width: 9.85545%;"></span><span
+                                            class="irs-shadow shadow-from" style="display: none;"></span><span
+                                            class="irs-shadow shadow-to" style="display: none;"></span><span
+                                            class="irs-slider from" style="left: 44.3495%;"></span><span
+                                            class="irs-slider to type_last" style="left: 54.205%;"></span></span><input
+                                        id="range_17" type="text" name="example_name" value="" class="irs-hidden-input"
+                                        tabindex="-1" readonly="">
+                                    <hr>
+                                    <h6>Remove double decoration</h6>
+                                    <span class="irs js-irs-17"><span class="irs"><span class="irs-line"
+                                                tabindex="0"><span class="irs-line-left"></span><span
+                                                    class="irs-line-mid"></span><span
+                                                    class="irs-line-right"></span></span><span class="irs-min"
+                                                style="visibility: visible;">Weight: 100 million pounds</span><span
+                                                class="irs-max" style="visibility: visible;">Weight: 200 million
+                                                pounds</span><span class="irs-from"
+                                                style="visibility: hidden; left: 36.5073%;">Weight: 145 million
+                                                pounds</span><span class="irs-to"
+                                                style="visibility: hidden; left: 46.3627%;">Weight: 155 million
+                                                pounds</span><span class="irs-single"
+                                                style="visibility: visible; left: 39.4896%;">Weight: 145 — 155 million
+                                                pounds</span></span><span class="irs-grid"></span><span class="irs-bar"
+                                            style="left: 45.0723%; width: 9.85545%;"></span><span
+                                            class="irs-shadow shadow-from" style="display: none;"></span><span
+                                            class="irs-shadow shadow-to" style="display: none;"></span><span
+                                            class="irs-slider from" style="left: 44.3495%;"></span><span
+                                            class="irs-slider to type_last" style="left: 54.205%;"></span></span><input
+                                        id="range_18" type="text" name="example_name" value="" class="irs-hidden-input"
+                                        tabindex="-1" readonly="">
+                                    <hr>
+                                    <h6>Use your own separator symbol with values_separator option. Like →</h6>
+                                    <span class="irs js-irs-18"><span class="irs"><span class="irs-line"
+                                                tabindex="0"><span class="irs-line-left"></span><span
+                                                    class="irs-line-mid"></span><span
+                                                    class="irs-line-right"></span></span><span class="irs-min"
+                                                style="visibility: visible;">Weight: 100 million pounds</span><span
+                                                class="irs-max" style="visibility: visible;">Weight: 200 million
+                                                pounds</span><span class="irs-from"
+                                                style="visibility: hidden; left: 39.4639%;">Weight: 148 million
+                                                pounds</span><span class="irs-to"
+                                                style="visibility: hidden; left: 43.4061%;">Weight: 152 million
+                                                pounds</span><span class="irs-single"
+                                                style="visibility: visible; left: 32.5445%;">Weight: 148 million pounds
+                                                → Weight: 152 million pounds</span></span><span
+                                            class="irs-grid"></span><span class="irs-bar"
+                                            style="left: 48.0289%; width: 3.94218%;"></span><span
+                                            class="irs-shadow shadow-from" style="display: none;"></span><span
+                                            class="irs-shadow shadow-to" style="display: none;"></span><span
+                                            class="irs-slider from" style="left: 47.3062%;"></span><span
+                                            class="irs-slider to type_last" style="left: 51.2484%;"></span></span><input
+                                        id="range_19" type="text" name="example_name" value="" class="irs-hidden-input"
+                                        tabindex="-1" readonly="">
+                                    <hr>
+                                    <h6>Or " to ":</h6>
+                                    <span class="irs js-irs-19"><span class="irs"><span class="irs-line"
+                                                tabindex="0"><span class="irs-line-left"></span><span
+                                                    class="irs-line-mid"></span><span
+                                                    class="irs-line-right"></span></span><span class="irs-min"
+                                                style="visibility: visible;">Range: 100 light years</span><span
+                                                class="irs-max" style="visibility: visible;">Range: 200 light
+                                                years</span><span class="irs-from"
+                                                style="visibility: hidden; left: 40.9392%;">Range: 148 light
+                                                years</span><span class="irs-to"
+                                                style="visibility: hidden; left: 44.8813%;">Range: 152 light
+                                                years</span><span class="irs-single"
+                                                style="visibility: visible; left: 40.895%;">Range: 148 to 152 light
+                                                years</span></span><span class="irs-grid"></span><span class="irs-bar"
+                                            style="left: 48.0289%; width: 3.94218%;"></span><span
+                                            class="irs-shadow shadow-from" style="display: none;"></span><span
+                                            class="irs-shadow shadow-to" style="display: none;"></span><span
+                                            class="irs-slider from" style="left: 47.3062%;"></span><span
+                                            class="irs-slider to type_last" style="left: 51.2484%;"></span></span><input
+                                        id="range_20" type="text" name="example_name" value="" class="irs-hidden-input"
+                                        tabindex="-1" readonly="">
+                                    <hr>
+                                    <h6>You can disable all the sliders visual details, if you wish. Like this:</h6>
+                                    <span class="irs js-irs-20"><span class="irs"><span class="irs-line"
+                                                tabindex="0"><span class="irs-line-left"></span><span
+                                                    class="irs-line-mid"></span><span
+                                                    class="irs-line-right"></span></span><span class="irs-min"
+                                                style="display: none;">0</span><span class="irs-max"
+                                                style="display: none;">1</span><span class="irs-from"
+                                                style="display: none; left: 0%;">0</span><span class="irs-to"
+                                                style="display: none; left: 0%;">0</span><span class="irs-single"
+                                                style="display: none; left: 0%;">0</span></span><span
+                                            class="irs-grid"></span><span class="irs-bar"
+                                            style="left: 20.4336%; width: 59.1327%;"></span><span
+                                            class="irs-shadow shadow-from" style="display: none;"></span><span
+                                            class="irs-shadow shadow-to" style="display: none;"></span><span
+                                            class="irs-slider from" style="left: 19.7109%;"></span><span
+                                            class="irs-slider to type_last" style="left: 78.8436%;"></span></span><input
+                                        id="range_21" type="text" name="example_name" value="" class="irs-hidden-input"
+                                        tabindex="-1" readonly="">
+                                    <hr>
+                                    <h6>Or hide any part you wish</h6>
+                                    <span class="irs js-irs-21"><span class="irs"><span class="irs-line"
+                                                tabindex="0"><span class="irs-line-left"></span><span
+                                                    class="irs-line-mid"></span><span
+                                                    class="irs-line-right"></span></span><span class="irs-min"
+                                                style="display: none;">0</span><span class="irs-max"
+                                                style="display: none;">1</span><span class="irs-from"
+                                                style="display: none; left: 0%;">0</span><span class="irs-to"
+                                                style="display: none; left: 0%;">0</span><span class="irs-single"
+                                                style="display: none; left: 0%;">0</span></span><span
+                                            class="irs-grid"></span><span class="irs-bar"
+                                            style="left: 20.4336%; width: 59.1327%;"></span><span
+                                            class="irs-shadow shadow-from" style="display: none;"></span><span
+                                            class="irs-shadow shadow-to" style="display: none;"></span><span
+                                            class="irs-slider from" style="left: 19.7109%;"></span><span
+                                            class="irs-slider to type_last" style="left: 78.8436%;"></span></span><input
+                                        id="range_22" type="text" name="example_name" value="" class="irs-hidden-input"
+                                        tabindex="-1" readonly="">
+                                    <hr>
+                                    <h6>And some more</h6>
+                                    <span class="irs js-irs-22"><span class="irs"><span class="irs-line"
+                                                tabindex="0"><span class="irs-line-left"></span><span
+                                                    class="irs-line-mid"></span><span
+                                                    class="irs-line-right"></span></span><span class="irs-min">1
+                                                000</span><span class="irs-max">2 000</span><span class="irs-from"
+                                                style="display: none; left: 0%;">0</span><span class="irs-to"
+                                                style="display: none; left: 0%;">0</span><span class="irs-single"
+                                                style="display: none; left: 0%;">0</span></span><span
+                                            class="irs-grid"></span><span class="irs-bar"
+                                            style="left: 20.4336%; width: 59.1327%;"></span><span
+                                            class="irs-shadow shadow-from" style="display: none;"></span><span
+                                            class="irs-shadow shadow-to" style="display: none;"></span><span
+                                            class="irs-slider from" style="left: 19.7109%;"></span><span
+                                            class="irs-slider to type_last" style="left: 78.8436%;"></span></span><input
+                                        id="range_23" type="text" name="example_name" value="" class="irs-hidden-input"
+                                        tabindex="-1" readonly="">
+                                    <hr>
+                                    <h6>And some more</h6>
+                                    <span class="irs js-irs-23"><span class="irs"><span class="irs-line"
+                                                tabindex="0"><span class="irs-line-left"></span><span
+                                                    class="irs-line-mid"></span><span
+                                                    class="irs-line-right"></span></span><span class="irs-min"
+                                                style="display: none; visibility: visible;">0</span><span
+                                                class="irs-max"
+                                                style="display: none; visibility: visible;">1</span><span
+                                                class="irs-from" style="visibility: visible; left: 18.1381%;">1
+                                                200</span><span class="irs-to"
+                                                style="visibility: visible; left: 77.2709%;">1 800</span><span
+                                                class="irs-single" style="visibility: hidden; left: 45.2273%;">1 200 — 1
+                                                800</span></span><span class="irs-grid"></span><span class="irs-bar"
+                                            style="left: 20.4336%; width: 59.1327%;"></span><span
+                                            class="irs-shadow shadow-from" style="display: none;"></span><span
+                                            class="irs-shadow shadow-to" style="display: none;"></span><span
+                                            class="irs-slider from" style="left: 19.7109%;"></span><span
+                                            class="irs-slider to type_last" style="left: 78.8436%;"></span></span><input
+                                        id="range_24" type="text" name="example_name" value="" class="irs-hidden-input"
+                                        tabindex="-1" readonly="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside class="aside-menu">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#timeline" role="tab">
+                        <i class="icon-list"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#messages" role="tab">
+                        <i class="icon-speech"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#settings" role="tab">
+                        <i class="icon-settings"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane active" id="timeline" role="tabpanel">
+                    <div class="list-group list-group-accent">
+                        <div
+                            class="list-group-item list-group-item-accent-secondary bg-light text-center font-weight-bold text-muted text-uppercase small">
+                            Today</div>
+                        <div class="list-group-item list-group-item-accent-warning list-group-item-divider">
+                            <div class="avatar float-right">
+                                <img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com">
+                            </div>
+                            <div>Meeting with
+                                <strong>Lucas</strong>
+                            </div>
+                            <small class="text-muted mr-3">
+                                <i class="icon-calendar"></i>&nbsp; 1 - 3pm</small>
+                            <small class="text-muted">
+                                <i class="icon-location-pin"></i>&nbsp; Palo Alto, CA</small>
+                        </div>
+                        <div class="list-group-item list-group-item-accent-info">
+                            <div class="avatar float-right">
+                                <img class="img-avatar" src="img/avatars/4.jpg" alt="admin@bootstrapmaster.com">
+                            </div>
+                            <div>Skype with
+                                <strong>Megan</strong>
+                            </div>
+                            <small class="text-muted mr-3">
+                                <i class="icon-calendar"></i>&nbsp; 4 - 5pm</small>
+                            <small class="text-muted">
+                                <i class="icon-social-skype"></i>&nbsp; On-line</small>
+                        </div>
+                        <div
+                            class="list-group-item list-group-item-accent-secondary bg-light text-center font-weight-bold text-muted text-uppercase small">
+                            Tomorrow</div>
+                        <div class="list-group-item list-group-item-accent-danger list-group-item-divider">
+                            <div>New UI Project -
+                                <strong>deadline</strong>
+                            </div>
+                            <small class="text-muted mr-3">
+                                <i class="icon-calendar"></i>&nbsp; 10 - 11pm</small>
+                            <small class="text-muted">
+                                <i class="icon-home"></i>&nbsp; creativeLabs HQ</small>
+                            <div class="avatars-stack mt-2">
+                                <div class="avatar avatar-xs">
+                                    <img class="img-avatar" src="img/avatars/2.jpg" alt="admin@bootstrapmaster.com">
+                                </div>
+                                <div class="avatar avatar-xs">
+                                    <img class="img-avatar" src="img/avatars/3.jpg" alt="admin@bootstrapmaster.com">
+                                </div>
+                                <div class="avatar avatar-xs">
+                                    <img class="img-avatar" src="img/avatars/4.jpg" alt="admin@bootstrapmaster.com">
+                                </div>
+                                <div class="avatar avatar-xs">
+                                    <img class="img-avatar" src="img/avatars/5.jpg" alt="admin@bootstrapmaster.com">
+                                </div>
+                                <div class="avatar avatar-xs">
+                                    <img class="img-avatar" src="img/avatars/6.jpg" alt="admin@bootstrapmaster.com">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-group-item list-group-item-accent-success list-group-item-divider">
+                            <div>
+                                <strong>#10 Startups.Garden</strong> Meetup</div>
+                            <small class="text-muted mr-3">
+                                <i class="icon-calendar"></i>&nbsp; 1 - 3pm</small>
+                            <small class="text-muted">
+                                <i class="icon-location-pin"></i>&nbsp; Palo Alto, CA</small>
+                        </div>
+                        <div class="list-group-item list-group-item-accent-primary list-group-item-divider">
+                            <div>
+                                <strong>Team meeting</strong>
+                            </div>
+                            <small class="text-muted mr-3">
+                                <i class="icon-calendar"></i>&nbsp; 4 - 6pm</small>
+                            <small class="text-muted">
+                                <i class="icon-home"></i>&nbsp; creativeLabs HQ</small>
+                            <div class="avatars-stack mt-2">
+                                <div class="avatar avatar-xs">
+                                    <img class="img-avatar" src="img/avatars/2.jpg" alt="admin@bootstrapmaster.com">
+                                </div>
+                                <div class="avatar avatar-xs">
+                                    <img class="img-avatar" src="img/avatars/3.jpg" alt="admin@bootstrapmaster.com">
+                                </div>
+                                <div class="avatar avatar-xs">
+                                    <img class="img-avatar" src="img/avatars/4.jpg" alt="admin@bootstrapmaster.com">
+                                </div>
+                                <div class="avatar avatar-xs">
+                                    <img class="img-avatar" src="img/avatars/5.jpg" alt="admin@bootstrapmaster.com">
+                                </div>
+                                <div class="avatar avatar-xs">
+                                    <img class="img-avatar" src="img/avatars/6.jpg" alt="admin@bootstrapmaster.com">
+                                </div>
+                                <div class="avatar avatar-xs">
+                                    <img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com">
+                                </div>
+                                <div class="avatar avatar-xs">
+                                    <img class="img-avatar" src="img/avatars/8.jpg" alt="admin@bootstrapmaster.com">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane p-3" id="messages" role="tabpanel">
+                    <div class="message">
+                        <div class="py-3 pb-5 mr-3 float-left">
+                            <div class="avatar">
+                                <img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com">
+                                <span class="avatar-status badge-success"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <small class="text-muted">Lukasz Holeczek</small>
+                            <small class="text-muted float-right mt-1">1:52 PM</small>
+                        </div>
+                        <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+                        <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt...</small>
+                    </div>
+                    <hr>
+                    <div class="message">
+                        <div class="py-3 pb-5 mr-3 float-left">
+                            <div class="avatar">
+                                <img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com">
+                                <span class="avatar-status badge-success"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <small class="text-muted">Lukasz Holeczek</small>
+                            <small class="text-muted float-right mt-1">1:52 PM</small>
+                        </div>
+                        <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+                        <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt...</small>
+                    </div>
+                    <hr>
+                    <div class="message">
+                        <div class="py-3 pb-5 mr-3 float-left">
+                            <div class="avatar">
+                                <img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com">
+                                <span class="avatar-status badge-success"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <small class="text-muted">Lukasz Holeczek</small>
+                            <small class="text-muted float-right mt-1">1:52 PM</small>
+                        </div>
+                        <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+                        <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt...</small>
+                    </div>
+                    <hr>
+                    <div class="message">
+                        <div class="py-3 pb-5 mr-3 float-left">
+                            <div class="avatar">
+                                <img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com">
+                                <span class="avatar-status badge-success"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <small class="text-muted">Lukasz Holeczek</small>
+                            <small class="text-muted float-right mt-1">1:52 PM</small>
+                        </div>
+                        <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+                        <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt...</small>
+                    </div>
+                    <hr>
+                    <div class="message">
+                        <div class="py-3 pb-5 mr-3 float-left">
+                            <div class="avatar">
+                                <img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com">
+                                <span class="avatar-status badge-success"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <small class="text-muted">Lukasz Holeczek</small>
+                            <small class="text-muted float-right mt-1">1:52 PM</small>
+                        </div>
+                        <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+                        <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt...</small>
+                    </div>
+                </div>
+                <div class="tab-pane p-3" id="settings" role="tabpanel">
+                    <h6>Settings</h6>
+                    <div class="aside-options">
+                        <div class="clearfix mt-4">
+                            <small>
+                                <b>Option 1</b>
+                            </small>
+                            <label class="switch switch-label switch-pill switch-success switch-sm float-right">
+                                <input class="switch-input" type="checkbox" checked="">
+                                <span class="switch-slider" data-checked="On" data-unchecked="Off"></span>
+                            </label>
+                        </div>
+                        <div>
+                            <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua.</small>
+                        </div>
+                    </div>
+                    <div class="aside-options">
+                        <div class="clearfix mt-3">
+                            <small>
+                                <b>Option 2</b>
+                            </small>
+                            <label class="switch switch-label switch-pill switch-success switch-sm float-right">
+                                <input class="switch-input" type="checkbox">
+                                <span class="switch-slider" data-checked="On" data-unchecked="Off"></span>
+                            </label>
+                        </div>
+                        <div>
+                            <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua.</small>
+                        </div>
+                    </div>
+                    <div class="aside-options">
+                        <div class="clearfix mt-3">
+                            <small>
+                                <b>Option 3</b>
+                            </small>
+                            <label class="switch switch-label switch-pill switch-success switch-sm float-right">
+                                <input class="switch-input" type="checkbox">
+                                <span class="switch-slider" data-checked="On" data-unchecked="Off"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="aside-options">
+                        <div class="clearfix mt-3">
+                            <small>
+                                <b>Option 4</b>
+                            </small>
+                            <label class="switch switch-label switch-pill switch-success switch-sm float-right">
+                                <input class="switch-input" type="checkbox" checked="">
+                                <span class="switch-slider" data-checked="On" data-unchecked="Off"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <hr>
+                    <h6>System Utilization</h6>
+                    <div class="text-uppercase mb-1 mt-4">
+                        <small>
+                            <b>CPU Usage</b>
+                        </small>
+                    </div>
+                    <div class="progress progress-xs">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <small class="text-muted">348 Processes. 1/4 Cores.</small>
+                    <div class="text-uppercase mb-1 mt-2">
+                        <small>
+                            <b>Memory Usage</b>
+                        </small>
+                    </div>
+                    <div class="progress progress-xs">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <small class="text-muted">11444GB/16384MB</small>
+                    <div class="text-uppercase mb-1 mt-2">
+                        <small>
+                            <b>SSD 1 Usage</b>
+                        </small>
+                    </div>
+                    <div class="progress progress-xs">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="95"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <small class="text-muted">243GB/256GB</small>
+                    <div class="text-uppercase mb-1 mt-2">
+                        <small>
+                            <b>SSD 2 Usage</b>
+                        </small>
+                    </div>
+                    <div class="progress progress-xs">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="10"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <small class="text-muted">25GB/256GB</small>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <footer class="app-footer">
+        <div>
+            <a href="https://coreui.io/pro/">CoreUI Pro</a>
+            <span>© 2018 creativeLabs.</span>
+        </div>
+        <div class="ml-auto">
+            <span>Powered by</span>
+            <a href="https://coreui.io/pro/">CoreUI Pro</a>
+        </div>
+    </footer>
+
+    <script src="https://coreui.io/demo/vendors/jquery/js/jquery.min.js"></script>
+    <script src="https://coreui.io/demo/vendors/popper.js/js/popper.min.js"></script>
+    <script src="https://coreui.io/demo/vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://coreui.io/demo/vendors/pace-progress/js/pace.min.js"></script>
+    <script src="https://coreui.io/demo/vendors/perfect-scrollbar/js/perfect-scrollbar.min.js"></script>
+
+    <script>
+        $('#ui-view').ajaxLoad();
+        $(document).ajaxComplete(function () {
+            Pace.restart()
+        });
+    </script>
+
+    <div class="daterangepicker ltr show-ranges opensleft">
+        <div class="ranges">
+            <ul>
+                <li data-range-key="Today">Today</li>
+                <li data-range-key="Yesterday">Yesterday</li>
+                <li data-range-key="Last 7 Days">Last 7 Days</li>
+                <li data-range-key="Last 30 Days">Last 30 Days</li>
+                <li data-range-key="This Month">This Month</li>
+                <li data-range-key="Last Month">Last Month</li>
+                <li data-range-key="Custom Range">Custom Range</li>
+            </ul>
+        </div>
+        <div class="drp-calendar left">
+            <div class="calendar-table"></div>
+            <div class="calendar-time" style="display: none;"></div>
+        </div>
+        <div class="drp-calendar right">
+            <div class="calendar-table"></div>
+            <div class="calendar-time" style="display: none;"></div>
+        </div>
+        <div class="drp-buttons"><span class="drp-selected"></span><button class="cancelBtn btn btn-sm btn-default"
+                type="button">Cancel</button><button class="applyBtn btn btn-sm btn-primary" disabled="disabled"
+                type="button">Apply</button> </div>
+    </div>
+    <script type="text/javascript" src="https://coreui.io/demo/vendors/ion-rangeslider/js/ion.rangeSlider.min.js" class="view-script"></script>
+    <script type="text/javascript" src="https://coreui.io/demo/js/sliders.js" class="view-script"></script>
+</body>
+
+</html>
