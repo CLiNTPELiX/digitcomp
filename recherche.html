@@ -14,43 +14,64 @@
 
 
 <style type="text/css">
-   .card {
+ body { 
+  background-image:url(758238.jpg);
+ }
+
+ .card-body {
+  background-color : #ffffff;
+   filter:alpha(opacity=80);
+   -moz-opacity:0.8;
+   opacity: 0.8;
+ color : #666666; 
+
+}
+.card-body2 {
+  background: rgba(76, 175, 80, 0.3) 
+}
+
+
+
+ .card {
     margin-bottom: 1.5rem;
+
 }
 </style>
 
 </head>
 
-<body>
+<body >
 
 
   <div class="container">
+
+
+
+
+      <div id="ui-view"><div><link href="https://coreui.io/demo/vendors/ion-rangeslider/css/ion.rangeSlider.min.css" rel="stylesheet">
+
+
+
 
     <div class="row">
 
       <div class="col-md-12">
         <div class="card">
-          <div class="card-header">Recherche
-            <small>
-              composant de recherche
-            </small>
-          </div>
+ 
           <div class="card-body">
             <div class="form-group row">
+                <div class="col-md-4">
+                <div class="card-body">
+ 
+                    <h6>Distance </h6>
+                    <span class="irs js-irs-1"><span class="irs"><span class="irs-line" tabindex="0"><span class="irs-line-left"></span><span class="irs-line-mid"></span><span class="irs-line-right"></span></span><span class="irs-min" style="visibility: visible;">100</span><span class="irs-max" style="visibility: visible;">1 000</span><span class="irs-from" style="visibility: hidden;">0</span><span class="irs-to" style="visibility: hidden;">0</span><span class="irs-single" style="left: 48.2694%;">550</span></span><span class="irs-grid"></span><span class="irs-bar" style="left: 0.708763%; width: 49.2912%;"></span><span class="irs-bar-edge"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-slider single" style="left: 49.2912%;"></span></span><input id="range_02" type="text" name="example_name" value="" class="irs-hidden-input" tabindex="-1" readonly="">
+                 
+                   
+                    </div>
 
-
-              <div class="col-md-2">
-                <label class="mr-1" for="exampleInputName2">OPTION</label>
               </div>
 
-              <div class="col-md-2">
-                <select class="form-control" id="select1" name="select1">
-                  <option value="0">Please select</option>
-                  <option value="1">Option #1</option>
-                  <option value="2">Option #2</option>
-                  <option value="3">Option #3</option>
-                </select>
-              </div>
+      
 
 
 
@@ -107,68 +128,6 @@
 
           </div>
 
-          <div class="card-body">
-            <div class="form-group row">
-
-
-              <div class="col-md-2">
-                <label class="mr-1" for="exampleInputName2">OPTION</label>
-              </div>
-
-              <div class="col-md-2">
-                <select class="form-control" id="select1" name="select1">
-                  <option value="0">Please select</option>
-                  <option value="1">Option #1</option>
-                  <option value="2">Option #2</option>
-                  <option value="3">Option #3</option>
-                </select>
-              </div>
-
-
-
-              <div class="col-md-1">
-                <label class="mr-1" for="exampleInputName2">OPTION</label>
-              </div>
-
-
-              <div class="col-md-2">
-                <select class="form-control" id="select1" name="select1">
-                  <option value="0">Please select</option>
-                  <option value="1">Option #1</option>
-                  <option value="2">Option #2</option>
-                  <option value="3">Option #3</option>
-                </select>
-              </div>
-
-
-
-              <div class="col-md-2">
-                <label class="mr-1" for="exampleInputName2">OPTION</label>
-              </div>
-
-              <div class="col-md-2">
-
-                <div class="form-check checkbox">
-                  <input class="form-check-input" id="check1" type="checkbox" value="">
-                  <label class="form-check-label" for="check1">Option 1</label>
-                </div>
-                <div class="form-check checkbox">
-                  <input class="form-check-input" id="check2" type="checkbox" value="">
-                  <label class="form-check-label" for="check2">Option 2</label>
-                </div>
-                <div class="form-check checkbox">
-                  <input class="form-check-input" id="check3" type="checkbox" value="">
-                  <label class="form-check-label" for="check3">Option 3</label>
-                </div>
-
-              </div>
-
-
-
-
-            </div>
-
-          </div>
 
 
 
@@ -192,15 +151,9 @@
 
 
     <div class="row">
-      <div class="col-lg-3">
-        <div class="row">
-          <img src="930.jpg" alt="Bootstrap" class="img-thumbnail">
+   
 
-
-        </div>
-      </div>
-
-      <div class="col-lg-9">
+      <div class="col-lg-12">
 
 
 
@@ -307,6 +260,7 @@
           </div>
 
 
+        </div>
 
 
 
@@ -322,7 +276,6 @@
 
 
 
-      </div>
 
 
 
