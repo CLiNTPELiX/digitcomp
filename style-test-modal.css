@@ -1,0 +1,61 @@
+body{
+    background-image: url("https://image.noelshack.com/fichiers/2019/10/3/1551886350-geometric-3037028-1920-1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container{
+    width: 100vw;
+    height: auto;
+}
+
+.card-body{
+    background-color: rgba(255, 255,255, 0.5);
+}
+.col-4{
+    background-image: url("https://image.freepik.com/vecteurs-libre/fond-technologie-numerique-maillage-lignes-rougeoyantes_1017-17208.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding-left: 15px;    
+}
+.icones{
+    margin-top:20px;
+    padding-inline-start: 0px;
+}
+
+.awefont{
+    display: inline;
+    text-decoration: none;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+span{
+    color:red;
+}
+
+.bloc-icones{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    font-size: 0.8em;
+    color:rgb(105, 105, 105);
+    margin-left:-40px;
+    padding-top:20px;
+    padding-left: 20px;
+    padding-right: 20px;    
+}
+.awefont-modal{
+    display: inline;
+    text-decoration: none;
+    margin-left: 15px;
+    
+}
+.modal-body{
+    text-align: justify;
+}
+.bloc-text{
+    margin-left:-20px;
+}
