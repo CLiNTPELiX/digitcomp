@@ -1,31 +1,22 @@
-/* -- Code CSS Bastien / section Outils (Tips) -- */
+/* -- Bastien / page Outils (Tips) -- */
+
+/* body */
+
+.body-tips {
+    background-color: grey;
+    background-image: url('https://image.noelshack.com/fichiers/2019/10/3/1551886350-geometric-3037028-1920-1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* cards */
 
 .body-card-tips {
     margin: 20px 20px 0px 20px;
     padding: 0;
     text-decoration: none;
     color: black;
-}
-
-.card-tips {
-    background-color: rgba(255,255,255, 0.2);
-}
-
-.card-tips:hover .card-img-tips{
-    opacity: 1;
-}
-
-.card-img-tips {
-    opacity: 0.8;
-}
-
-.card-tips a{
-    text-decoration: none;
-    color: black;
-}
-
-.card-title-tips {
-    margin: 0;
 }
 
 .container-cards-tips {
@@ -36,17 +27,48 @@
     height: 80vh;
 }
 
-.cont-pic-tips {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80vh;
+.card-tips {
+    background-color: rgba(255,255,255, 0.2);
+}
+
+.card-tips a{
+    text-decoration: none;
+    color: black;
+}
+
+.card-img-tips {
+    opacity: 0.8;
+}
+
+.card-tips:hover .card-img-tips{
+    opacity: 1;
+}
+
+.card-title-tips {
+    margin: 0;
 }
 
 .overflowed-tips {
     height: 70vh;
     overflow: scroll;
 }
+
+/* cards - modal */
+
+.modal-header-tips {
+    border-bottom: none;
+}
+.modal-footer-tips {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn-modal-footer-tips {
+    margin-bottom: 20px;
+}
+
+/* text left */
 
 .left-pic-container-tips {
     position: fixed;
@@ -61,32 +83,21 @@
     height: 65vh;
 }
 
-.modal-header-tips {
-    border-bottom: none;
-}
-.modal-footer-tips {
-    flex-direction: column;
+.cont-pic-tips {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    text-align: center;
+    height: 80vh;
 }
 
-.body-tips {
-    background-color: grey;
-    background-image: url('https://image.noelshack.com/fichiers/2019/10/3/1551886350-geometric-3037028-1920-1.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
 
-.btn-modal-footer-tips {
-    margin-bottom: 20px;
-}
 
 @media(max-width:992px){
     .media-queries-none-tips{
         display: none;
     }
 }
+/* footer */
 
 .footer-icons-tips ul li {
     list-style-type: none;
@@ -98,13 +109,13 @@
 
 }
 
-/* -- Code CSS Bastien / section Outils (Tips) -- */
+/* -- Code Sarah / page Contact and modal-recherches -- */
 
-/* -- Code CSS Sarah / section Contact and modal-recherches -- */
+/* -- Code Hafid / page Recherches -- */
 
-/* -- Code CSS Hafid / section Recherches -- */
+/* -- Code Dan / page Accueil -- */
 
-/* -- Code CSS Dan / section Accueil -- */
+/* footer */
 
 #twitter{
 	color: lightblue;
