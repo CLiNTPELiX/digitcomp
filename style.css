@@ -7,9 +7,18 @@ body{
 .container{
 width: 60vw;
 height: auto; 
-background-color:rgba(255, 255, 255, 0.7);
+
 padding: 30px;
 margin: auto;
 margin-top:30px;
+}
+
+form{
+    background-color:rgba(255, 255, 255, 0.7);
+    padding:20px;
+}
+.contact-title{
+    text-align: center;
+    padding-bottom: 20px;
 }
 
