@@ -1,6 +1,7 @@
-.margehaute{
-	margin-top: 15px;
-}
+#
+# bout de code à intégrer dans votre propre CSS
+# *** NE PAS PAS POINTER VERS footer.css dans vos html ***
+
 #twitter{
 	color: lightblue;
 }
