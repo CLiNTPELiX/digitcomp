@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .margehaute{
 	margin-top: 15px;
 }
@@ -8,6 +9,12 @@
 	background-attachment: fixed;
 	background-size: cover;
 }
+=======
+/*
+# bout de code à intégrer dans votre propre CSS #
+# *** NE PAS PAS POINTER VERS footer.css dans vos html *** */
+
+>>>>>>> feature/footer
 #twitter{
 	color: lightblue;
 	background-color: white;
@@ -20,3 +27,15 @@
 	color: teal;
 	background-color: white;
 }
+<<<<<<< HEAD
+=======
+/* Code Bastien */
+.footer-icon-tips ul li{
+	list-style-type: none
+}
+
+.icons-social-network-tips{
+	display: flex;
+	flex-direction: row;
+}
+>>>>>>> feature/footer
