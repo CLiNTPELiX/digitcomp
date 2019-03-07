@@ -11,30 +11,49 @@
     <title>Contact</title>
 </head>
 <body>
-    <div class="container">
-        <h2>Contactez-moi!</h2>
-            <form>
-                <div class="form-group">
-                    <label for="formGroupExampleInput">Votre nom</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="ex:Jean Dupont">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Votre email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrez votre email">
-                    <small id="emailHelp" class="form-text text-muted">Je ne partagerai pas vos données.</small>
-                </div>
-                <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Se souvenir de moi</label>
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Votre message</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Envoyer</button>
-            </form>    
+    <!--Barre de navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="#">DigitComp</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="accueil.html">Accueil <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="recherche.html">Recherche</a>
+                <a class="nav-item nav-link" href="tips.html">Outils</a>
+                <a class="nav-item nav-link" href="contact.html">Contact</a>
+            </div>
         </div>
-    <hr/>
+    </nav>
+    <!--Titre de contact-->
+    
+
+    <!--Formulaire de contact-->
+    <div class="container">
+            <h2 class="contact-title">Contactez-moi!</h2>
+        <form>
+            <div class="form-group">
+                <label for="formGroupExampleInput">Votre nom</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="ex:Jean Dupont">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Votre email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrez votre email">
+                <small id="emailHelp" class="form-text text-muted">Je ne partagerai pas vos données.</small>
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Se souvenir de moi</label>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Votre message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+        </form>    
+    </div>
+<hr/>
             
     
     <!-- Optional JavaScript -->
