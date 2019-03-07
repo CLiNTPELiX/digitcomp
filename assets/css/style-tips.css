@@ -9,18 +9,17 @@
     background-color: rgba(255,255,255, 0.2);
 }
 
+.card-tips:hover .card-img-tips{
+    opacity: 1;
+}
+
+.card-img-tips {
+    opacity: 0.8;
+}
+
 .card-tips a{
     text-decoration: none;
     color: black;
-}
-
-.card-tips:hover .card-img {
-    opacity: 1;
-
-}
-
-.card-img {
-    opacity: 0.5;
 }
 
 .card-title-tips {
