@@ -14,3 +14,12 @@
 	color: teal;
 	background-color: white;
 }
+/* Code Bastien */
+.footer-icon-tips ul li{
+	list-style-type: none
+}
+
+.icons-social-network-tips{
+	display: flex;
+	flex-direction: row;
+}
