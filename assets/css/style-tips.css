@@ -1,0 +1,86 @@
+.body-card-tips {
+    margin: 20px 20px 0px 20px;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+}
+
+.card-tips {
+    background-color: rgba(255,255,255, 0.2);
+}
+
+.card-tips a{
+    text-decoration: none;
+    color: black;
+}
+
+.card-tips:hover .card-img {
+    opacity: 1;
+
+}
+
+.card-img {
+    opacity: 0.5;
+}
+
+.card-title-tips {
+    margin: 0;
+}
+
+.container-cards-tips {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cont-pic-tips {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.overflowed-tips {
+    height: 80vh;
+    overflow: scroll;
+}
+
+.left-pic-container-tips {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    padding: 20px 40px 20px 20px;
+    color: white;
+    text-align: center;
+    height: auto;
+    height: 65vh;
+}
+
+.modal-header-tips {
+    border-bottom: none;
+}
+.modal-footer-tips {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.body-tips {
+    background-color: grey;
+    background-image: url('https://image.noelshack.com/fichiers/2019/10/3/1551886350-geometric-3037028-1920-1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.btn-modal-footer-tips {
+    margin-bottom: 20px;
+}
+
+@media(max-width:992px){
+    .media-queries-none-tips{
+        display: none;
