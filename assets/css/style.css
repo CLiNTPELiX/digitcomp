@@ -33,18 +33,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 80vh;
 }
 
 .cont-pic-tips {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    height: 80vh;
 }
 
 .overflowed-tips {
-    height: 80vh;
+    height: 70vh;
     overflow: scroll;
 }
 
