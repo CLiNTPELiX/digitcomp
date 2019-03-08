@@ -88,6 +88,7 @@
 .modal-header-tips {
     border-bottom: none;
 }
+
 .modal-footer-tips {
     flex-direction: column;
     justify-content: center;
@@ -158,6 +159,10 @@ footer .row ul {
     margin-top: 15px;
 }
 
+
+#bastien .overflow-tips {
+
+}
 /* -- Code Sarah / page Contact and modal-recherches -- */
 
 /* -- Code Hafid / page Recherches -- */
