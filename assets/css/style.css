@@ -37,7 +37,6 @@
 .log2 {
     font-family: 'Marvel', sans-serif;
     font-size: 0.9rem;
-
 }
 
 /* cards */
@@ -103,7 +102,6 @@
     background-color: whitesmoke;
     border: none;
 }
-
 
 /* text left */
 
@@ -178,8 +176,8 @@ footer .row ul {
 .contact-title-sarah{
     text-align: center;
     padding-bottom: 20px;
-}
-    
+} 
+
 .contact-form{
     background-color:rgba(255, 255, 255, 0.7);
     padding:20px;
