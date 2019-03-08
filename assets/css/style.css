@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* -- Bastien / page Outils (Tips) -- */
 
 /* body */
@@ -5,13 +6,21 @@
 .body {
     background-color: grey;
     background-image: url('https://image.noelshack.com/fichiers/2019/10/3/1551886350-geometric-3037028-1920-1.jpg');
+=======
+body{
+    background-image: url("https://image.noelshack.com/fichiers/2019/10/3/1551886350-geometric-3037028-1920-1.jpg");
+>>>>>>> contact
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
+<<<<<<< HEAD
 
 /* navbar  */
 
+=======
+/* css navbar*/
+>>>>>>> contact
 .navbar {
     background-color: black;
 }
@@ -37,6 +46,7 @@
 .log2 {
     font-family: 'Marvel', sans-serif;
     font-size: 0.9rem;
+<<<<<<< HEAD
 
 }
 
@@ -128,6 +138,31 @@
 
 /* footer */
 
+=======
+}
+
+/* CSS contact*/
+
+.container-contact{
+width: 60vw;
+height: auto; 
+padding: 30px;
+margin: auto;
+margin-top:30px;
+}
+
+.contact-title-sarah{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.contact-form{
+    background-color:rgba(255, 255, 255, 0.7);
+    padding:20px;
+}
+
+/*CSS FOOTER*/
+>>>>>>> contact
 
 .list-footer-tips {
     display: flex;
@@ -157,6 +192,7 @@ footer .row ul {
     color: black;
     margin-top: 15px;
 }
+<<<<<<< HEAD
 
 /* -- Code Sarah / page Contact and modal-recherches -- */
 
@@ -195,3 +231,5 @@ footer .row ul {
 	display: flex;
 	flex-direction: row;
 }
+=======
+>>>>>>> contact
