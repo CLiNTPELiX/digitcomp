@@ -1,0 +1,197 @@
+/* -- Bastien / page Outils (Tips) -- */
+
+/* body */
+
+.body {
+    background-color: grey;
+    background-image: url('https://image.noelshack.com/fichiers/2019/10/3/1551886350-geometric-3037028-1920-1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* navbar  */
+
+.navbar {
+    background-color: black;
+}
+
+.navbar-nav {
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar-nav .nav-link {
+    padding: 10px 60px 10px 30px !important;
+}
+
+.navbar-nav li a{
+    color: white;
+}
+
+.log1 {
+    font-family: 'Bungee', cursive;
+    font-size: 1.5rem;
+}
+
+.log2 {
+    font-family: 'Marvel', sans-serif;
+    font-size: 0.9rem;
+
+}
+
+/* cards */
+
+.body-card-tips {
+    margin: 20px 20px 0px 20px;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+}
+
+.container-cards-tips {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.card-tips {
+    background-color: rgba(255,255,255, 0.4);
+}
+
+.card-tips a{
+    text-decoration: none;
+    color: black;
+}
+
+.card-img-tips {
+    opacity: 0.8;
+}
+
+.card-tips:hover .card-img-tips{
+    opacity: 1;
+}
+
+.card-title-tips {
+    margin: 0;
+}
+
+.overflowed-tips {
+    height: 70vh;
+    overflow: scroll;
+}
+
+/* cards - modal */
+
+.modal-header-tips {
+    border-bottom: none;
+}
+.modal-footer-tips {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn-modal-footer-tips {
+    margin-bottom: 20px;
+}
+
+/* text left */
+
+.left-pic-container-tips {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    padding: 20px 40px 20px 20px;
+    color: black;
+    text-align: center;
+    height: auto;
+    height: 65vh;
+}
+
+.cont-pic-tips {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+@media(max-width:992px){
+    .media-queries-none-tips{
+        display: none;
+    }
+}
+
+/* footer */
+
+
+.list-footer-tips {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 0.8rem;
+    text-align: center;
+    list-style-type: none;
+}
+
+footer .row ul {
+    padding: 0;
+}
+
+.list-footer-tips ul li {
+    list-style-type: none;
+    text-align: center;
+}
+
+.page-footer-tips a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.page-footer-tips {
+    color: black;
+    margin-top: 15px;
+}
+
+/* -- Code Sarah / page Contact and modal-recherches -- */
+
+/* -- Code Hafid / page Recherches -- */
+
+/* -- Code Dan / page Accueil -- */
+
+.margehaute{
+	margin-top: 15px;
+}
+#body-fond{
+	background-color: grey;
+	background-image: url('https://image.noelshack.com/fichiers/2019/10/3/1551886350-geometric-3037028-1920-1.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+#twitter{
+	color: lightblue;
+	background-color: white;
+}
+#facebook{
+	color: blue;
+	background-color: white;
+}
+#linkedin{
+	color: teal;
+	background-color: white;
+}
+/* Code Bastien */
+.footer-icon-tips ul li{
+	list-style-type: none
+}
+
+.icons-social-network-tips{
+	display: flex;
+	flex-direction: row;
+}
