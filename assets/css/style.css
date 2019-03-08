@@ -44,11 +44,6 @@
 .log2 {
     font-family: 'Marvel', sans-serif;
     font-size: 0.9rem;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tips
-
 }
 
 /* cards */
@@ -107,21 +102,18 @@
 }
 
 .btn-modal-footer-tips {
-<<<<<<< HEAD
     margin-bottom: 20px;
 }
 
-=======
+/* A verif
     margin: 20px 0 20px 0;
-}
+} */
 
 .modal-card-1 {
     background-color: whitesmoke;
     border: none;
 }
 
-
->>>>>>> tips
 /* text left */
 
 .left-pic-container-tips {
@@ -152,9 +144,6 @@
 
 /* footer */
 
-<<<<<<< HEAD
-=======
-}
 
 /* CSS contact*/
 
@@ -177,9 +166,6 @@ margin-top:30px;
 }
 
 /*CSS FOOTER*/
->>>>>>> contact
-=======
->>>>>>> tips
 
 .list-footer-tips {
     display: flex;
@@ -188,10 +174,7 @@ margin-top:30px;
     font-size: 0.8rem;
     text-align: center;
     list-style-type: none;
-<<<<<<< HEAD
-=======
     margin-bottom: 0.5rem;
->>>>>>> tips
 }
 
 footer .row ul {
@@ -213,10 +196,7 @@ footer .row ul {
     color: black;
     margin-top: 15px;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tips
+
 
 /* -- Code Sarah / page Contact and modal-recherches -- */
 
@@ -224,7 +204,7 @@ footer .row ul {
 
 /* -- Code Dan / page Accueil -- */
 
-<<<<<<< HEAD
+
 .margehaute{
 	margin-top: 15px;
 }
@@ -247,7 +227,7 @@ footer .row ul {
 	color: teal;
 	background-color: white;
 }
-/* Code Bastien */
+    /* Code Bastien */
 .footer-icon-tips ul li{
 	list-style-type: none
 }
@@ -256,8 +236,3 @@ footer .row ul {
 	display: flex;
 	flex-direction: row;
 }
-=======
->>>>>>> contact
-=======
-
->>>>>>> tips
