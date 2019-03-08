@@ -96,8 +96,14 @@
 }
 
 .btn-modal-footer-tips {
-    margin-bottom: 20px;
+    margin: 20px 0 20px 0;
 }
+
+.modal-card-1 {
+    background-color: whitesmoke;
+    border: none;
+}
+
 
 /* text left */
 
