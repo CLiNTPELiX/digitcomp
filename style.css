@@ -4,8 +4,35 @@ body{
     background-attachment: fixed;
     background-size: cover;
 }
+/* css navbar*/
+.navbar {
+    background-color: black;
+}
 
-.container{
+.navbar-nav {
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar-nav .nav-link {
+    padding: 10px 60px 10px 30px !important;
+}
+
+.navbar-nav li a{
+    color: white;
+}
+
+.log1 {
+    font-family: 'Bungee', cursive;
+    font-size: 1.5rem;
+}
+
+.log2 {
+    font-family: 'Marvel', sans-serif;
+    font-size: 0.9rem;
+
+}
+.container-contact{
 width: 60vw;
 height: auto; 
 padding: 30px;
@@ -13,7 +40,7 @@ margin: auto;
 margin-top:30px;
 }
 
-.contact-title{
+.contact-title-sarah{
     text-align: center;
     padding-bottom: 20px;
 }
