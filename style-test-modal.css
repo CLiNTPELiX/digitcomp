@@ -113,6 +113,36 @@ body{
 .bloc-text{
     margin-left:-20px;
 }
+/*CSS FOOTER*/
+
+.list-footer-tips {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 0.8rem;
+    text-align: center;
+    list-style-type: none;
+}
+
+footer .row ul {
+    padding: 0;
+}
+
+.list-footer-tips ul li {
+    list-style-type: none;
+    text-align: center;
+}
+
+.page-footer-tips a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.page-footer-tips {
+    color: black;
+    margin-top: 15px;
+}
 
 
 
