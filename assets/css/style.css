@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tips
+
 /* -- Bastien / page Outils (Tips) -- */
 
 /* body */
@@ -9,30 +6,19 @@
 .body {
     background-color: grey;
     background-image: url('https://image.noelshack.com/fichiers/2019/10/3/1551886350-geometric-3037028-1920-1.jpg');
-<<<<<<< HEAD
-=======
-body{
-    background-image: url("https://image.noelshack.com/fichiers/2019/10/3/1551886350-geometric-3037028-1920-1.jpg");
->>>>>>> contact
-=======
->>>>>>> tips
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 /* navbar  */
 
-=======
+
 /* css navbar*/
->>>>>>> contact
-=======
+
 
 /* navbar  */
 
->>>>>>> tips
 .navbar {
     background-color: black;
 }
@@ -113,10 +99,7 @@ body{
 .modal-header-tips {
     border-bottom: none;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> tips
 .modal-footer-tips {
     flex-direction: column;
     justify-content: center;
