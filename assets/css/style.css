@@ -88,6 +88,7 @@
 .modal-header-tips {
     border-bottom: none;
 }
+
 .modal-footer-tips {
     flex-direction: column;
     justify-content: center;
@@ -95,8 +96,14 @@
 }
 
 .btn-modal-footer-tips {
-    margin-bottom: 20px;
+    margin: 20px 0 20px 0;
 }
+
+.modal-card-1 {
+    background-color: whitesmoke;
+    border: none;
+}
+
 
 /* text left */
 
@@ -136,6 +143,7 @@
     font-size: 0.8rem;
     text-align: center;
     list-style-type: none;
+    margin-bottom: 0.5rem;
 }
 
 footer .row ul {
