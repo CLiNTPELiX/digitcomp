@@ -175,15 +175,16 @@ footer .row ul {
     margin-top:30px;
     }
     
-    .contact-title-sarah{
-        text-align: center;
-        padding-bottom: 20px;
-    }
+.contact-title-sarah{
+    text-align: center;
+    padding-bottom: 20px;
+}
     
-    .contact-form{
-        background-color:rgba(255, 255, 255, 0.7);
-        padding:20px;
-    }
+.contact-form{
+    background-color:rgba(255, 255, 255, 0.7);
+    padding:20px;
+}
+
 /* -- Code Hafid / page Recherches -- */
 
 /* -- Code Dan / page Accueil -- */
