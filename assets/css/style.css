@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tips
+
 /* -- Bastien / page Outils (Tips) -- */
 
 /* body */
@@ -9,30 +6,19 @@
 .body {
     background-color: grey;
     background-image: url('https://image.noelshack.com/fichiers/2019/10/3/1551886350-geometric-3037028-1920-1.jpg');
-<<<<<<< HEAD
-=======
-body{
-    background-image: url("https://image.noelshack.com/fichiers/2019/10/3/1551886350-geometric-3037028-1920-1.jpg");
->>>>>>> contact
-=======
->>>>>>> tips
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 /* navbar  */
 
-=======
+
 /* css navbar*/
->>>>>>> contact
-=======
+
 
 /* navbar  */
 
->>>>>>> tips
 .navbar {
     background-color: black;
 }
@@ -58,11 +44,6 @@ body{
 .log2 {
     font-family: 'Marvel', sans-serif;
     font-size: 0.9rem;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tips
-
 }
 
 /* cards */
@@ -113,10 +94,7 @@ body{
 .modal-header-tips {
     border-bottom: none;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> tips
 .modal-footer-tips {
     flex-direction: column;
     justify-content: center;
@@ -124,21 +102,18 @@ body{
 }
 
 .btn-modal-footer-tips {
-<<<<<<< HEAD
     margin-bottom: 20px;
 }
 
-=======
+/* A verif
     margin: 20px 0 20px 0;
-}
+} */
 
 .modal-card-1 {
     background-color: whitesmoke;
     border: none;
 }
 
-
->>>>>>> tips
 /* text left */
 
 .left-pic-container-tips {
@@ -169,9 +144,6 @@ body{
 
 /* footer */
 
-<<<<<<< HEAD
-=======
-}
 
 /* CSS contact*/
 
@@ -194,9 +166,6 @@ margin-top:30px;
 }
 
 /*CSS FOOTER*/
->>>>>>> contact
-=======
->>>>>>> tips
 
 .list-footer-tips {
     display: flex;
@@ -205,10 +174,7 @@ margin-top:30px;
     font-size: 0.8rem;
     text-align: center;
     list-style-type: none;
-<<<<<<< HEAD
-=======
     margin-bottom: 0.5rem;
->>>>>>> tips
 }
 
 footer .row ul {
@@ -230,10 +196,7 @@ footer .row ul {
     color: black;
     margin-top: 15px;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> tips
+
 
 /* -- Code Sarah / page Contact and modal-recherches -- */
 
@@ -241,7 +204,7 @@ footer .row ul {
 
 /* -- Code Dan / page Accueil -- */
 
-<<<<<<< HEAD
+
 .margehaute{
 	margin-top: 15px;
 }
@@ -264,7 +227,7 @@ footer .row ul {
 	color: teal;
 	background-color: white;
 }
-/* Code Bastien */
+    /* Code Bastien */
 .footer-icon-tips ul li{
 	list-style-type: none
 }
@@ -273,8 +236,3 @@ footer .row ul {
 	display: flex;
 	flex-direction: row;
 }
-=======
->>>>>>> contact
-=======
-
->>>>>>> tips
