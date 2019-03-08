@@ -30,8 +30,10 @@ body{
 .log2 {
     font-family: 'Marvel', sans-serif;
     font-size: 0.9rem;
-
 }
+
+/* CSS contact*/
+
 .container-contact{
 width: 60vw;
 height: auto; 
@@ -50,19 +52,33 @@ margin-top:30px;
     padding:20px;
 }
 
-/* CSS FOOTER*/
+/*CSS FOOTER*/
 
-.footer{
-    background-color:rgb(48, 48, 48);
-}
-.row-footer{
+.list-footer-tips {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    font-size: 0.8rem;
+    text-align: center;
+    list-style-type: none;
 }
-.awefont-footer{
-    display: inline;
+
+footer .row ul {
+    padding: 0;
+}
+
+.list-footer-tips ul li {
+    list-style-type: none;
+    text-align: center;
+}
+
+.page-footer-tips a {
     text-decoration: none;
-    margin-left: 10px;
+    color: black;
+    text-align: center;
+}
+
+.page-footer-tips {
+    color: black;
+    margin-top: 15px;
 }
