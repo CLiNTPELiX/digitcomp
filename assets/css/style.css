@@ -1,5 +1,4 @@
-
-/* -- Bastien / page Outils (Tips) -- */
+ /* -- Bastien / page Outils (Tips) -- */
 
 /* body */
 
@@ -10,12 +9,6 @@
     background-attachment: fixed;
     background-size: cover;
 }
-
-/* navbar  */
-
-
-/* css navbar*/
-
 
 /* navbar  */
 
@@ -44,6 +37,7 @@
 .log2 {
     font-family: 'Marvel', sans-serif;
     font-size: 0.9rem;
+
 }
 
 /* cards */
@@ -94,7 +88,6 @@
 .modal-header-tips {
     border-bottom: none;
 }
-
 .modal-footer-tips {
     flex-direction: column;
     justify-content: center;
@@ -103,15 +96,6 @@
 
 .btn-modal-footer-tips {
     margin-bottom: 20px;
-}
-
-/* A verif
-    margin: 20px 0 20px 0;
-} */
-
-.modal-card-1 {
-    background-color: whitesmoke;
-    border: none;
 }
 
 /* text left */
@@ -145,28 +129,6 @@
 /* footer */
 
 
-/* CSS contact*/
-
-.container-contact{
-width: 60vw;
-height: auto; 
-padding: 30px;
-margin: auto;
-margin-top:30px;
-}
-
-.contact-title-sarah{
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-.contact-form{
-    background-color:rgba(255, 255, 255, 0.7);
-    padding:20px;
-}
-
-/*CSS FOOTER*/
-
 .list-footer-tips {
     display: flex;
     flex-direction: row;
@@ -174,7 +136,6 @@ margin-top:30px;
     font-size: 0.8rem;
     text-align: center;
     list-style-type: none;
-    margin-bottom: 0.5rem;
 }
 
 footer .row ul {
@@ -197,13 +158,11 @@ footer .row ul {
     margin-top: 15px;
 }
 
-
 /* -- Code Sarah / page Contact and modal-recherches -- */
 
 /* -- Code Hafid / page Recherches -- */
 
 /* -- Code Dan / page Accueil -- */
-
 
 .margehaute{
 	margin-top: 15px;
@@ -227,7 +186,7 @@ footer .row ul {
 	color: teal;
 	background-color: white;
 }
-    /* Code Bastien */
+/* Code Bastien */
 .footer-icon-tips ul li{
 	list-style-type: none
 }
